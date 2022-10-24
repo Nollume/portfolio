@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2b9d8b76.css",
-    "main.js": "/portfolio/static/js/main.62091a6e.js",
+    "main.css": "/portfolio/static/css/main.923658c0.css",
+    "main.js": "/portfolio/static/js/main.9d0e3cd7.js",
     "static/media/skillmea-certifikat-react-angular-vue-a-typescript.pdf": "/portfolio/static/media/skillmea-certifikat-react-angular-vue-a-typescript.418074f3ec02daf370be.pdf",
     "static/media/skillmea-certifikat-vue-js-single-page-aplikacie.pdf": "/portfolio/static/media/skillmea-certifikat-vue-js-single-page-aplikacie.5a876c0b2573d2b06b7c.pdf",
     "static/media/skillmea-certifikat-tailwind-css.pdf": "/portfolio/static/media/skillmea-certifikat-tailwind-css.cf5f1a7d960262c0b20d.pdf",
     "static/media/skillmea-certifikat-javascript-a-es6.pdf": "/portfolio/static/media/skillmea-certifikat-javascript-a-es6.62d569d99f610e1df6f2.pdf",
+    "static/media/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.pdf": "/portfolio/static/media/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.0bac8bfaf1e26b552dc8.pdf",
     "static/media/webrebel-1-html-css-javascript.pdf": "/portfolio/static/media/webrebel-1-html-css-javascript.f0db139809c26ab16d77.pdf",
     "static/media/git-a-github-zaklady.pdf": "/portfolio/static/media/git-a-github-zaklady.1dc9b7b64addd7fece0d.pdf",
     "static/media/css-preprocesory-sass.pdf": "/portfolio/static/media/css-preprocesory-sass.0ffea19bf250caa5dc89.pdf",
@@ -20,11 +21,12 @@
     "static/media/screencapture-nollu-9fc76-web-app-profile-Vt5iyTYsLmHFyCyk9VqX-2022-09-16-14_30_32.png": "/portfolio/static/media/screencapture-nollu-9fc76-web-app-profile-Vt5iyTYsLmHFyCyk9VqX-2022-09-16-14_30_32.f72abc92b265ef333a8c.png",
     "static/media/vitejs.svg": "/portfolio/static/media/vitejs.1c850b303fba77e282435836dd840633.svg",
     "index.html": "/portfolio/index.html",
-    "main.2b9d8b76.css.map": "/portfolio/static/css/main.2b9d8b76.css.map",
-    "main.62091a6e.js.map": "/portfolio/static/js/main.62091a6e.js.map"
+    "static/media/colored-logo.svg": "/portfolio/static/media/colored-logo.44d1fa1a1399805ef1cf860f5da8de21.svg",
+    "main.923658c0.css.map": "/portfolio/static/css/main.923658c0.css.map",
+    "main.9d0e3cd7.js.map": "/portfolio/static/js/main.9d0e3cd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b9d8b76.css",
-    "static/js/main.62091a6e.js"
+    "static/css/main.923658c0.css",
+    "static/js/main.9d0e3cd7.js"
   ]
 }
