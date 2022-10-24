@@ -18,21 +18,21 @@ const Omne = (props: Props) => {
 					className=" bg-my-light/90 dark:bg-my-bgDark/90 p-4  flex flex-col gap-2 rounded-md md:w-3/4 lg:w-2/3 xl:w-1/2"
 				>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							{' '}
 							<strong className="text-my-accent">1999/2008: </strong> Základná
 							škola.
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							<strong className="text-my-accent">2008/2012: </strong> Stredná
 							odborná škola elektrotechnická -vyučený mechanik počítačových
 							sietí , ukončené maturitou.
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							{' '}
 							<strong className="text-my-accent">2012/2022: </strong>
 							Hned po škole som začal pracovať vystriedal som viac pracovných
@@ -41,32 +41,31 @@ const Omne = (props: Props) => {
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							<strong className="text-my-accent">2020: </strong> Kurz Anglického
 							jazyka ktorý sa stále učím.
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							{' '}
 							<strong className="text-my-accent">2021: </strong>Kurz HTML a CSS.
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							<strong className="text-my-accent">2022: </strong> Kurzy
 							Sass(SCSS), JavaScript, Vue.js, Git, React, Tailwind CSS,
-							Firebase, Typescript...
+							Firebase, Typescript, Nuxt3 ...
 						</p>
 					</li>
 					<li>
-						<p className="card">
+						<p className="cardAbout">
 							{' '}
 							<strong className="text-my-accent">
 								2023/2024 - Plány do budúcna:{' '}
 							</strong>{' '}
-							Nuxt.js - Next.js. Ionic, Node.js - Express.js , MongoDb / PHP -
-							Laravel.
+							Node.js - Express.js, MongoDb, PHP - Laravel, Ionic
 						</p>
 					</li>
 				</ul>

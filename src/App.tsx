@@ -26,6 +26,8 @@ import vue from './assets/certifikaty/skillmea-certifikat-vue-js-single-page-apl
 import htmlCss from './assets/certifikaty/webrebel-1-html-css-javascript.pdf'
 // @ts-ignore
 import zakladyProgramovania from './assets/certifikaty/zaklady-programovania-a-oop.pdf'
+// @ts-ignore
+import nuxt from './assets/certifikaty/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.pdf'
 
 function App() {
 	const [openNav, setopenNav] = useState(false)
@@ -89,17 +91,18 @@ function App() {
 			)}
 			<dialog ref={modal} className=" modal p-0 w-[80%] h-[80%]">
 				<div className="flex flex-col gap-2 ">
-					<embed src={htmlCss} className="w-full h-screen "></embed>
-					<embed
+					<iframe src={htmlCss} className="w-full h-screen "></iframe>
+					<iframe
 						src={zakladyProgramovania}
 						className="w-full h-screen "
-					></embed>
-					<embed src={sass} className="w-full h-screen"></embed>
-					<embed src={javaScript} className="w-full h-screen"></embed>
-					<embed src={vue} className="w-full h-screen"></embed>
-					<embed src={reactTs} className="w-full h-screen"></embed>
-					<embed src={git} className="w-full h-screen "></embed>
-					<embed src={tailwind} className="w-full h-screen"></embed>
+					></iframe>
+					<iframe src={nuxt} className="w-full h-screen"></iframe>
+					<iframe src={sass} className="w-full h-screen"></iframe>
+					<iframe src={javaScript} className="w-full h-screen"></iframe>
+					<iframe src={vue} className="w-full h-screen"></iframe>
+					<iframe src={reactTs} className="w-full h-screen"></iframe>
+					<iframe src={git} className="w-full h-screen "></iframe>
+					<iframe src={tailwind} className="w-full h-screen"></iframe>
 					<button
 						onClick={handleCloseModal}
 						className="btn fixed px-1 py-1 top-2 right-3 "
@@ -140,12 +143,9 @@ function App() {
 			</main>
 
 			<footer className=" w-full flex flex-row-reverse gap-2 items-center justify-center text-sm absolute bottom-0 z-20">
-				<a className='absolute right-8' target="_blank" href="https://bgjar.com" rel="noreferrer">
-					BGJar
-				</a>
-				<p className='small:hidden'>|</p>
-				<p >&copy;/2022</p>
-				<p >Marek Dorotovič</p>
+				<p className="small:hidden">|</p>
+				<p>&copy;/2022</p>
+				<p>Marek Dorotovič</p>
 			</footer>
 		</div>
 	)

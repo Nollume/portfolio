@@ -8,7 +8,7 @@ type Props = {
 
 const TheNavigation = (props: Props) => {
 	return (
-		<nav className="fixed inset-0 bg-my-light dark:bg-my-bgDark isolate md:top-0 md:h-16 md:border-b md:border-my-dark dark:md:border-my-light">
+		<nav className="fixed inset-0  bg-my-light dark:bg-my-bgDark isolate md:top-0 md:h-16 md:border-b md:border-my-dark dark:md:border-my-light">
 			<ul className="flex flex-col mb-20 mt-8 mx-8 justify-center items-center gap-6 inset-0 absolute md:flex-row">
 				<li className="mt-auto md:mt-0 md:ml-auto xl:ml-0">
 					{window.innerWidth < 768 ? (
