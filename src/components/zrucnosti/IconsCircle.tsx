@@ -19,6 +19,7 @@ import gitHub from '../../assets/icons/icons8-github-48.png'
 import VScode from '../../assets/icons/icons8-visual-studio-code-2019-48.png'
 import webpack from '../../assets/icons/icons8-webpack-48.png'
 import nuxt from '../../assets/icons/colored-logo.svg'
+import vitest from '../../assets/icons/vitest-seeklogo.com.svg'
 
 import YarnIcon from '../icons/YarnIcon'
 import PiniaIcon from '../icons/PiniaIcon'
@@ -31,13 +32,15 @@ const IconsCircle = (props: Props) => {
 		Aos.init({ duration: 400 })
 	}, [])
 
-	const handleMouseMove = (e: React.MouseEvent) => {
+	const handleMouseMove = (e: React.MouseEvent | React.PointerEvent) => {
 		// @ts-ignore
 		const cards = Array.from(cardContainer.current?.children)
 
 		for (const card of cards) {
 			const rect = card.getBoundingClientRect(),
+				// @ts-ignore
 				x = e.clientX - rect.left,
+				// @ts-ignore
 				y = e.clientY - rect.top
 			// @ts-ignore
 			card.style.setProperty('--mouse-x', `${x}px`)
@@ -51,6 +54,9 @@ const IconsCircle = (props: Props) => {
 			ref={cardContainer}
 			className=" cards"
 			onMouseMove={(e: React.MouseEvent) => {
+				handleMouseMove(e)
+			}}
+			onPointerMove={(e: React.PointerEvent) => {
 				handleMouseMove(e)
 			}}
 		>
@@ -86,7 +92,7 @@ const IconsCircle = (props: Props) => {
 			</div>
 			<div className="card">
 				<div className="card-content">
-					<p>VUE.js 3</p>
+					<p>VUE</p>
 					<img className="icon" src={vueJs} alt="vueJs logo" />
 					<p className="tracking-widest font-bold  ">
 						<span className="text-my-accent opacity-100">||||</span>
@@ -240,7 +246,19 @@ const IconsCircle = (props: Props) => {
 			<div className="card ">
 				<div className="card-content">
 					<p>Vite</p>
-					<img className="icon" src={vite} alt="" />
+					<img className="icon" src={vite} alt="vite logo" />
+					<p className="tracking-widest font-bold  ">
+						<span className="text-my-accent opacity-100">||</span>
+						<span className="opacity-50">|||</span>
+					</p>
+				</div>
+			</div>
+			<div className="card ">
+				<div className="card-content">
+					<p>Vitest</p>
+
+					<img className="icon" src={vitest} alt="vitest logo" />
+
 					<p className="tracking-widest font-bold  ">
 						<span className="text-my-accent opacity-100">||</span>
 						<span className="opacity-50">|||</span>

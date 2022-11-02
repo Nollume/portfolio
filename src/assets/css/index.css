@@ -196,14 +196,18 @@
 		@apply grid md:place-content-center  px-4 py-2 relative  dark:top-0 z-50  small:w-3/4  md:flex-[1];
 	}
 
+	.projects-container section:nth-child(odd) {
+		@apply md:flex-row-reverse xl:flex-row;
+	}
+
 	.projects-container section:not(:last-child) article {
 		@apply relative after:absolute after:w-[90%] after:rounded-md after:left-1/2 after:-translate-x-1/2 small:after:w-full after:h-2 after:top-full z-50 after:bg-my-accent md:after:hidden;
 	}
 
 	.projects-container section:nth-child(even) article {
-		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full  md:before:bg-my-accent md:before:left-full md:before:rounded-md lg:before:hidden;
+		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full  md:before:bg-my-accent md:before:left-full md:before:rounded-md lg:before:hidden small:ml-4;
 	}
 	.projects-container section:nth-child(odd) article {
-		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden;
+		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
 	}
 }
