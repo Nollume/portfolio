@@ -17,6 +17,7 @@ import profile from '../assets/images/screencapture-nollu-9fc76-web-app-profile-
 import chat from '../assets/images/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.png'
 import weatherHome from '../assets/images/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).png'
 import weatherByCity from '../assets/images/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).png'
+import memoryGame from '../assets/images/Opera Snapshot_2022-11-06_200750_velvety-crepe-9c1e44.netlify.app (1).png'
 
 type Props = {}
 
@@ -130,10 +131,10 @@ const Projekty = (props: Props) => {
 						</h4>
 						<p className="mb-2 ">
 							Responzívna (SPA) stránka spravená v Nuxt 3 so vstavaným audio
-							prehrávačom. Toto je zatial môj najoblúbenejší projekt ktorý som
-							spravil pretože som požil iTunes api na zobrazenie krátkych ukážok
-							mojich skladieb ked som sa venoval hudobnej produkcii spolu s
-							bratom.
+							prehrávačom. Toto je zatiaľ môj najobľúbenejší projekt ktorý som
+							spravil pretože som použil iTunes api na zobrazenie krátkych
+							ukážok mojich skladieb ked som sa venoval hudobnej produkcii spolu
+							s mojim bratom.
 						</p>
 						<div className="flex flex-col">
 							<div>
@@ -262,6 +263,42 @@ const Projekty = (props: Props) => {
 							<li>Tailwind CSS</li>
 							<li>React</li>
 							<li>Axios API</li>
+						</ul>
+					</article>
+				</section>
+				<section className="projects-sections ">
+					<div className="md:flex-[2] ">
+						<img
+							className=" w-auto h-full object-cover sm:rounded-md"
+							src={memoryGame}
+							alt="Memory game"
+						/>
+					</div>
+					<article className="projects-article  ">
+						<h4 className="font-bold text-xl  text-my-accent ">Memory game</h4>
+						<p className="mb-2 ">Pamäťová hra (pexeso).</p>
+						<div className="flex flex-col">
+							<div>
+								<a
+									className=" projects-a"
+									href="https://github.com/Nollume/Memory-game"
+								>
+									Zobraziť kód
+								</a>
+							</div>
+							<div>
+								<a
+									className=" projects-a"
+									href="https://velvety-crepe-9c1e44.netlify.app"
+								>
+									Zobraziť projekt
+								</a>
+							</div>
+						</div>
+						<ul className="projects-ul">
+							<li>SCSS</li>
+							<li>VUE.js</li>
+							<li>Nuxt 3</li>
 						</ul>
 					</article>
 				</section>

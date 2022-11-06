@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.923658c0.css",
-    "main.js": "/static/js/main.08760e18.js",
+    "main.css": "/static/css/main.2102b07c.css",
+    "main.js": "/static/js/main.d459e483.js",
     "static/media/skillmea-certifikat-react-angular-vue-a-typescript.pdf": "/static/media/skillmea-certifikat-react-angular-vue-a-typescript.418074f3ec02daf370be.pdf",
     "static/media/skillmea-certifikat-vue-js-single-page-aplikacie.pdf": "/static/media/skillmea-certifikat-vue-js-single-page-aplikacie.5a876c0b2573d2b06b7c.pdf",
     "static/media/skillmea-certifikat-tailwind-css.pdf": "/static/media/skillmea-certifikat-tailwind-css.cf5f1a7d960262c0b20d.pdf",
@@ -11,22 +11,24 @@
     "static/media/git-a-github-zaklady.pdf": "/static/media/git-a-github-zaklady.1dc9b7b64addd7fece0d.pdf",
     "static/media/css-preprocesory-sass.pdf": "/static/media/css-preprocesory-sass.0ffea19bf250caa5dc89.pdf",
     "static/media/zaklady-programovania-a-oop.pdf": "/static/media/zaklady-programovania-a-oop.41ba19c5c7704683efed.pdf",
+    "static/media/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).png": "/static/media/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).16042bb2be604c08fed9.png",
+    "static/media/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).png": "/static/media/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).c5f2413fc7ddfcaee842.png",
+    "static/media/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.png": "/static/media/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.1b101d614c0fe727aef5.png",
     "static/media/texting.gif": "/static/media/texting.67a8a1869ef5806b80e1.gif",
     "static/media/screencapture-nollu-9fc76-web-app-2022-09-16-14_29_53.png": "/static/media/screencapture-nollu-9fc76-web-app-2022-09-16-14_29_53.f365672922c438cb03dc.png",
     "static/media/screencapture-nollu-9fc76-web-app-login-2022-09-16-13_34_54.png": "/static/media/screencapture-nollu-9fc76-web-app-login-2022-09-16-13_34_54.70809d4dad4329e5f32f.png",
-    "static/media/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.png": "/static/media/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.ec6b7e8962588306b1aa.png",
-    "static/media/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).png": "/static/media/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).8e9f40d4a4863aec41ee.png",
-    "static/media/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).png": "/static/media/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).87c880378ccd2e84a344.png",
+    "static/media/Opera Snapshot_2022-11-06_200750_velvety-crepe-9c1e44.netlify.app (1).png": "/static/media/Opera Snapshot_2022-11-06_200750_velvety-crepe-9c1e44.netlify.app (1).97b47e835e81b30b8e54.png",
     "static/media/screencapture-nollu-9fc76-web-app-notifications-2022-09-16-14_15_55.png": "/static/media/screencapture-nollu-9fc76-web-app-notifications-2022-09-16-14_15_55.6285c30adce0ce1ac546.png",
     "static/media/screencapture-nollu-9fc76-web-app-profile-Vt5iyTYsLmHFyCyk9VqX-2022-09-16-14_30_32.png": "/static/media/screencapture-nollu-9fc76-web-app-profile-Vt5iyTYsLmHFyCyk9VqX-2022-09-16-14_30_32.f72abc92b265ef333a8c.png",
+    "static/media/vitest-seeklogo.com.svg": "/static/media/vitest-seeklogo.com.73e04e0dd3d2f68d07d42fadf6c3534f.svg",
     "static/media/vitejs.svg": "/static/media/vitejs.1c850b303fba77e282435836dd840633.svg",
     "index.html": "/index.html",
     "static/media/colored-logo.svg": "/static/media/colored-logo.44d1fa1a1399805ef1cf860f5da8de21.svg",
-    "main.923658c0.css.map": "/static/css/main.923658c0.css.map",
-    "main.08760e18.js.map": "/static/js/main.08760e18.js.map"
+    "main.2102b07c.css.map": "/static/css/main.2102b07c.css.map",
+    "main.d459e483.js.map": "/static/js/main.d459e483.js.map"
   },
   "entrypoints": [
-    "static/css/main.923658c0.css",
-    "static/js/main.08760e18.js"
+    "static/css/main.2102b07c.css",
+    "static/js/main.d459e483.js"
   ]
 }
