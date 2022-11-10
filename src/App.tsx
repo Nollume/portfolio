@@ -28,6 +28,8 @@ import htmlCss from './assets/certifikaty/webrebel-1-html-css-javascript.pdf'
 import zakladyProgramovania from './assets/certifikaty/zaklady-programovania-a-oop.pdf'
 // @ts-ignore
 import nuxt from './assets/certifikaty/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.pdf'
+// @ts-ignore
+import vitest from './assets/certifikaty/UC-575ae6df-18af-4836-88ca-ea19ed442d13.pdf'
 
 function App() {
 	const [openNav, setopenNav] = useState(false)
@@ -90,19 +92,25 @@ function App() {
 				</div>
 			)}
 			<dialog ref={modal} className=" modal p-0 w-[80%] h-[80%]">
-				<div className="flex flex-col gap-2 ">
-					<iframe src={htmlCss} className="w-full h-screen "></iframe>
+				<div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 twoxl:grid-cols-4">
+					<iframe
+						src={htmlCss}
+						className="w-full min-h-[25rem] appearance-none"
+					></iframe>
 					<iframe
 						src={zakladyProgramovania}
-						className="w-full h-screen "
+						className="w-full min-h-[25rem] "
 					></iframe>
-					<iframe src={nuxt} className="w-full h-screen"></iframe>
-					<iframe src={sass} className="w-full h-screen"></iframe>
-					<iframe src={javaScript} className="w-full h-screen"></iframe>
-					<iframe src={vue} className="w-full h-screen"></iframe>
-					<iframe src={reactTs} className="w-full h-screen"></iframe>
-					<iframe src={git} className="w-full h-screen "></iframe>
-					<iframe src={tailwind} className="w-full h-screen"></iframe>
+
+					<iframe src={sass} className="w-full min-h-[25rem]"></iframe>
+
+					<iframe src={javaScript} className="w-full min-h-[25rem]"></iframe>
+					<iframe src={vue} className="w-full min-h-[25rem]"></iframe>
+					<iframe src={reactTs} className="w-full min-h-[25rem]"></iframe>
+					<iframe src={git} className="w-full min-h-[25rem] "></iframe>
+					<iframe src={tailwind} className="w-full min-h-[25rem]"></iframe>
+					<iframe src={nuxt} className="w-full min-h-[11rem]"></iframe>
+					<iframe src={vitest} className="w-full min-h-[11rem]"></iframe>
 					<button
 						onClick={handleCloseModal}
 						className="btn fixed px-1 py-1 top-2 right-3 "

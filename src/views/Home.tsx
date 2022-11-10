@@ -4,6 +4,10 @@ import TypeWriterEffect from 'react-typewriter-effect'
 import { ParallaxBanner } from 'react-scroll-parallax'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Fb from '../components/icons/Fb'
+import Git from '../components/icons/Git'
+//@ts-ignore
+import CV from '../assets/CV/Životopis Dorotovič Okt2022.pdf'
 
 type Props = {}
 
@@ -28,9 +32,9 @@ const Home = (props: Props) => {
 		>
 			<section
 				id="Domov"
-				className=" home z-10  flex flex-col gap-2 items-center justify-between min-h-screen pt-14 pb-4 relative isolate md:pt-28"
+				className=" home z-10  flex flex-col gap-2 items-center justify-around  min-h-screen pt-14 pb-4 relative isolate md:pt-28"
 			>
-				<article className=" flex flex-col items-center justify-center gap-1  px-4 py-2 h-28 ">
+				<article className=" flex flex-col items-center  justify-center gap-1  px-4 py-2 h-28 ">
 					<TypeWriterEffect
 						startDelay={100}
 						cursorColor="transparent"
@@ -112,21 +116,50 @@ const Home = (props: Props) => {
 						</h1>
 					)}
 				</article>
-				<div className=" flex flex-col justify-evenly gap-16 sm:self-center my-auto sm:flex-row  items-center">
+				<div className=" my-gradient mx-6 py-6 rounded-md shadow-lg shadow-gray-500 flex flex-col items-center gap-4 small:mx-10 sm:px-6 sm:self-center my-auto sm:flex-row lg:m-2  lg:gap-8">
 					<img
 						className=" w-56 h-auto rounded-md mx-auto z-20 saturate-50 shadow-xl "
 						src="https://ik.imagekit.io/nollume/tr:w-400/Face_XZve9yJw8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662707649279"
-						alt="Marek"
+						alt="fotka Mareka"
 					/>
-					<p
-						style={{
-							fontSize: 'clamp(1rem, 2vw, 2rem)',
-						}}
-						className="text-my-light text-shadow font-bold text-center px-4 small:px-8 medium:px-10 sm:w-72 md:w-96 xl:w-[40rem]"
-					>
-						Junior front-end web developer. Stále motivovaný sa zdokonalovať a
-						učiť nové technológie.
-					</p>
+
+					<div className=" flex flex-col items-center gap-2 px-4 small:px-8 sm:px-4 sm:items-start medium:px-10 sm:w-72 sm:gap-4 md:w-96 xl:w-[40rem]">
+						<a
+							href={CV}
+							download="Marek-Dorotovic-CV.pdf"
+							className=" bg-my-accent hover:bg-my-accentHover font-bold px-2 py-1 border border-my-dark dark:border-my-light rounded-md duration-300  cursor-pointer sm:order-2"
+						>
+							Stiahnúť Životopis
+						</a>
+						<ul
+							style={{
+								fontSize: 'clamp(1rem, 2vw, 1.4rem)',
+							}}
+							className="list-disc px-5 sm:order-1"
+						>
+							<li>Front-end web developer</li>
+							<li>HTML, CSS, JS. Obľúbený Js framework VUE.js / Nuxt3.</li>
+							<li>Motivovaný sa zdokonalovať a učiť nové technológie.</li>
+						</ul>
+						<div className="flex  gap-2 sm:order-3">
+							<a
+								className="icons"
+								href="https://www.facebook.com/marek.dorotovic.7/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Fb />
+							</a>
+							<a
+								className="icons"
+								href="https://github.com/Nollume"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Git />
+							</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</ParallaxBanner>

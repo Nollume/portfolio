@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.2102b07c.css",
-    "main.js": "/static/js/main.d459e483.js",
+    "main.css": "/static/css/main.d40e7ae2.css",
+    "main.js": "/static/js/main.d0adb84b.js",
     "static/media/skillmea-certifikat-react-angular-vue-a-typescript.pdf": "/static/media/skillmea-certifikat-react-angular-vue-a-typescript.418074f3ec02daf370be.pdf",
     "static/media/skillmea-certifikat-vue-js-single-page-aplikacie.pdf": "/static/media/skillmea-certifikat-vue-js-single-page-aplikacie.5a876c0b2573d2b06b7c.pdf",
     "static/media/skillmea-certifikat-tailwind-css.pdf": "/static/media/skillmea-certifikat-tailwind-css.cf5f1a7d960262c0b20d.pdf",
     "static/media/skillmea-certifikat-javascript-a-es6.pdf": "/static/media/skillmea-certifikat-javascript-a-es6.62d569d99f610e1df6f2.pdf",
+    "static/media/Životopis Dorotovič Okt2022.pdf": "/static/media/Životopis Dorotovič Okt2022.4e7f4fd3df2317742453.pdf",
+    "static/media/UC-575ae6df-18af-4836-88ca-ea19ed442d13.pdf": "/static/media/UC-575ae6df-18af-4836-88ca-ea19ed442d13.07954d9b6cf17262bbbf.pdf",
     "static/media/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.pdf": "/static/media/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.0bac8bfaf1e26b552dc8.pdf",
     "static/media/webrebel-1-html-css-javascript.pdf": "/static/media/webrebel-1-html-css-javascript.f0db139809c26ab16d77.pdf",
     "static/media/git-a-github-zaklady.pdf": "/static/media/git-a-github-zaklady.1dc9b7b64addd7fece0d.pdf",
@@ -24,11 +26,11 @@
     "static/media/vitejs.svg": "/static/media/vitejs.1c850b303fba77e282435836dd840633.svg",
     "index.html": "/index.html",
     "static/media/colored-logo.svg": "/static/media/colored-logo.44d1fa1a1399805ef1cf860f5da8de21.svg",
-    "main.2102b07c.css.map": "/static/css/main.2102b07c.css.map",
-    "main.d459e483.js.map": "/static/js/main.d459e483.js.map"
+    "main.d40e7ae2.css.map": "/static/css/main.d40e7ae2.css.map",
+    "main.d0adb84b.js.map": "/static/js/main.d0adb84b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2102b07c.css",
-    "static/js/main.d459e483.js"
+    "static/css/main.d40e7ae2.css",
+    "static/js/main.d0adb84b.js"
   ]
 }
