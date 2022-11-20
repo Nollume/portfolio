@@ -1,6 +1,7 @@
 import React from 'react'
 import Fb from './icons/Fb'
 import Git from './icons/Git'
+import Linkedin from './icons/Linkedin'
 
 type Props = {
 	onCloseNavigation: (data: boolean) => void
@@ -9,7 +10,7 @@ type Props = {
 const TheNavigation = (props: Props) => {
 	return (
 		<nav className="fixed inset-0  bg-my-light dark:bg-my-bgDark isolate md:top-0 md:h-16 md:border-b md:border-my-dark dark:md:border-my-light">
-			<ul className="flex flex-col mb-20 mt-8 mx-8 justify-center items-center gap-6 inset-0 absolute md:flex-row">
+			<ul className="flex flex-col mb-20 mt-8 mx-8 justify-center items-center gap-6 inset-0 absolute md:gap-4 md:flex-row lg:gap-6">
 				<li className="mt-auto md:mt-0 md:ml-auto xl:ml-0">
 					{window.innerWidth < 768 ? (
 						<a
@@ -99,7 +100,7 @@ const TheNavigation = (props: Props) => {
 				<li className="hidden md:inline-block font-bold text-2xl rotate-45 select-none">
 					|
 				</li>
-				<li className=" flex items-center gap-2 mt-auto md:mt-0">
+				<li className=" flex items-center gap-4 mt-auto md:gap-2 md:mt-0">
 					<a
 						className="icons"
 						href="https://www.facebook.com/marek.dorotovic.7/"
@@ -115,6 +116,14 @@ const TheNavigation = (props: Props) => {
 						rel="noreferrer"
 					>
 						<Git />
+					</a>
+					<a
+						className="icons"
+						href="https://www.linkedin.com/in/marek-dorotovič-85225b225/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<Linkedin />
 					</a>
 				</li>
 			</ul>

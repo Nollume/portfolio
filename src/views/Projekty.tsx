@@ -1,23 +1,4 @@
 import React from 'react'
-// Import Swiper React components
-import { Navigation, Pagination } from 'swiper'
-
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-
-import login from '../assets/images/screencapture-nollu-9fc76-web-app-login-2022-09-16-13_34_54.png'
-import nollu from '../assets/images/screencapture-nollu-9fc76-web-app-2022-09-16-14_29_53.png'
-import contact from '../assets/images/screencapture-nollu-9fc76-web-app-contact-2022-09-16-14_25_42.png'
-import notifications from '../assets/images/screencapture-nollu-9fc76-web-app-notifications-2022-09-16-14_15_55.png'
-import profile from '../assets/images/screencapture-nollu-9fc76-web-app-profile-Vt5iyTYsLmHFyCyk9VqX-2022-09-16-14_30_32.png'
-import chat from '../assets/images/screencapture-nollu-9fc76-web-app-person-RxZZeAPcpoYrkKQ3KyvlNnflqKE3-o8OmmJoTbQYSoE60ER4qxvQlA5j2-2022-09-16-14_41_26.png'
-import weatherHome from '../assets/images/screencapture-localhost-3001-Current-weather-app-2022-10-03-12_24_30 (1).png'
-import weatherByCity from '../assets/images/screencapture-localhost-3001-Find-by-city-2022-10-03-12_25_23 (1).png'
-import memoryGame from '../assets/images/Opera Snapshot_2022-11-06_200750_velvety-crepe-9c1e44.netlify.app (1).png'
 
 type Props = {}
 
@@ -26,59 +7,19 @@ const Projekty = (props: Props) => {
 		<section id="Projekty" className="min-h-screen  pt-14">
 			<h3 className="headline3 mb-4  px-1 z-40">projekty</h3>
 			<div className="projects-container  grid grid-cols-1 gap-10 md:mx-8 md:gap-8 xl:grid-cols-2 xl:gap-x-12 ">
-				<section className="projects-sections">
-					<Swiper
-						className=" md:flex-[2] sm:rounded-md"
-						spaceBetween={5}
-						modules={[Navigation, Pagination]}
-						navigation
-						pagination={{ clickable: true }}
-						slidesPerView={2.2}
-					>
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={login}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={nollu}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
+				{/* NOLLU */}
 
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={contact}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={notifications}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={profile}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className=" w-full h-auto "
-								src={chat}
-								alt="Nollu chat app"
-							/>
-						</SwiperSlide>
-					</Swiper>
+				<section className="projects-sections">
+					<div className="md:flex-[2]">
+						<img
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494 800w,"
+							alt="Nollu chat app"
+						/>
+					</div>
 
 					<article className="projects-article ">
 						<h4 className="font-bold text-xl  text-my-accent ">
@@ -113,15 +54,15 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
-
+				{/* M&L page */}
 				<section className="projects-sections">
-					<div className="md:flex-[2] ">
+					<div className=" md:flex-[2] ">
 						<img
-							className=" w-auto h-full object-cover"
-							src="https://ik.imagekit.io/nollume/tr:w-600/Opera_Snapshot_2022-11-02_123308_markandlukas.netlify.app_mEpPQP4kaQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667389467027"
-							srcSet="https://ik.imagekit.io/nollume/tr:w-400/Opera_Snapshot_2022-11-02_123308_markandlukas.netlify.app_mEpPQP4kaQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667389467027 400w,
-								https://ik.imagekit.io/nollume/tr:w-600/Opera_Snapshot_2022-11-02_123308_markandlukas.netlify.app_mEpPQP4kaQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667389467027 600w,
-								https://ik.imagekit.io/nollume/tr:w-800/Opera_Snapshot_2022-11-02_123308_markandlukas.netlify.app_mEpPQP4kaQ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667389467027 800w,"
+							className=" w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515 800w,"
 							alt="M&L page"
 						/>
 					</div>
@@ -130,11 +71,10 @@ const Projekty = (props: Props) => {
 							Mark & Lukas music page
 						</h4>
 						<p className="mb-2 ">
-							Responzívna (SPA) stránka spravená v Nuxt 3 so vstavaným audio
-							prehrávačom. Toto je zatiaľ môj najobľúbenejší projekt ktorý som
-							spravil pretože som použil iTunes api na zobrazenie krátkych
+							SPA spravená v Nuxt 3 so vstavaným audio
+							prehrávačom. Použil som iTunes api na zobrazenie krátkych
 							ukážok mojich skladieb ked som sa venoval hudobnej produkcii spolu
-							s mojim bratom.
+							s bratom.
 						</p>
 						<div className="flex flex-col">
 							<div>
@@ -159,41 +99,22 @@ const Projekty = (props: Props) => {
 							<li>VUE.js</li>
 							<li>Tailwind CSS</li>
 							<li>Pinia</li>
-							<li>Vite</li>
+							
 						</ul>
 					</article>
 				</section>
-
+				{/* Space tourism multi page website */}
 				<section className="projects-sections">
-					<Swiper
-						className=" md:flex-[2] sm:rounded-md"
-						spaceBetween={5}
-						modules={[Navigation, Pagination]}
-						navigation
-						pagination={{ clickable: true }}
-						slidesPerView={1.1}
-					>
-						<SwiperSlide>
-							<img
-								className=" w-auto h-full object-cover"
-								src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Space-tourism-multi-page-website-2022-09-19-11_35_42_91szc7tes.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663583971643"
-								srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-Space-tourism-multi-page-website-2022-09-19-11_35_42_91szc7tes.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663583971643 400w,
-								https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Space-tourism-multi-page-website-2022-09-19-11_35_42_91szc7tes.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663583971643 600w,
-								https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-Space-tourism-multi-page-website-2022-09-19-11_35_42_91szc7tes.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663583971643 800w,"
-								alt="Space tourism multi page website"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className="w-auto h-full object-cover"
-								src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Space-tourism-multi-page-website-destination-moon-2022-09-19-11_40_36__1__6YjRRD2CJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663584077486"
-								srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-Space-tourism-multi-page-website-destination-moon-2022-09-19-11_40_36__1__6YjRRD2CJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663584077486 400w,
-								https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Space-tourism-multi-page-website-destination-moon-2022-09-19-11_40_36__1__6YjRRD2CJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663584077486 600w,
-								https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-Space-tourism-multi-page-website-destination-moon-2022-09-19-11_40_36__1__6YjRRD2CJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663584077486 800w,"
-								alt="Space tourism multi page website"
-							/>
-						</SwiperSlide>
-					</Swiper>
+					<div className="md:flex-[2]">
+						<img
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326 800w,"
+							alt="Comments section app"
+						/>
+					</div>
 					<article className="projects-article ">
 						<h4 className="font-bold text-xl  text-my-accent ">
 							Space tourism multi page website
@@ -228,18 +149,59 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
-
+				{/* Countries quiz */}
 				<section className="projects-sections ">
-					<div className="md:flex-[2] grid grid-cols-2 grid-rows-1 w-full place-items-stretch gap-1">
+					<div className="md:flex-[2]">
 						<img
-							className=" w-full  h-auto sm:rounded-md"
-							src={weatherHome}
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309 800w,"
 							alt="Weather app"
 						/>
-
+					</div>
+					<article className="projects-article  ">
+						<h4 className="font-bold text-xl  text-my-accent ">
+							Countries quiz
+						</h4>
+						<p className="mb-2 ">
+							Kvíz v ktorom sa snažíš uhádnuť krajinu podľa vlajky
+							alebo hlavného mesta. Tiež umožnuje nastaviť krajiny podľa
+							regionu.
+						</p>
+						<div className="flex flex-col">
+							<div>
+								<a
+									className=" projects-a"
+									href="https://github.com/Nollume/Quiz-countries"
+								>
+									Zobraziť kód
+								</a>
+							</div>
+							<div>
+								<a className=" projects-a" href="https://quizool.netlify.app">
+									Zobraziť projekt
+								</a>
+							</div>
+						</div>
+						<ul className="projects-ul">
+							<li>Nuxt 3</li>
+							<li>VUE.js</li>
+							<li>Tailwind CSS</li>
+							
+						</ul>
+					</article>
+				</section>
+				{/* Weather app */}
+				<section className="projects-sections ">
+					<div className="md:flex-[2]">
 						<img
-							className=" w-full h-auto sm:rounded-md "
-							src={weatherByCity}
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341 800w,"
 							alt="Weather app"
 						/>
 					</div>
@@ -266,11 +228,15 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+				{/* Memory game */}
 				<section className="projects-sections ">
 					<div className="md:flex-[2] ">
 						<img
-							className=" w-auto h-full object-cover sm:rounded-md"
-							src={memoryGame}
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501 800w,"
 							alt="Memory game"
 						/>
 					</div>
@@ -302,14 +268,15 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+				{/* tip calculator app */}
 				<section className="projects-sections ">
 					<div className="md:flex-[2] ">
 						<img
-							className=" w-auto h-full object-cover sm:rounded-md"
-							src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-tip-calculator-app-main-2022-09-15-16_03_08_ocSSlLZFu8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255175971"
-							srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-tip-calculator-app-main-2022-09-15-16_03_08_ocSSlLZFu8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255175971 400w,
-							https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-tip-calculator-app-main-2022-09-15-16_03_08_ocSSlLZFu8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255175971 600w,
-							https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-tip-calculator-app-main-2022-09-15-16_03_08_ocSSlLZFu8.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255175971 800w,
+							className=" w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 800w,
 							"
 							alt="tip calculator app desktop"
 						/>
@@ -347,36 +314,18 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+				{/* todo */}
 				<section className="projects-sections">
-					<Swiper
-						className="md:flex-[2] sm:rounded-md"
-						spaceBetween={5}
-						modules={[Navigation, Pagination]}
-						navigation
-						pagination={{ clickable: true }}
-						slidesPerView={1.1}
-					>
-						<SwiperSlide>
-							<img
-								className="  w-auto h-full object-cover"
-								src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_58_D6crBYVo_t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249523"
-								srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_58_D6crBYVo_t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249523 400w,
-								https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_58_D6crBYVo_t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249523 600w,
-								https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_58_D6crBYVo_t.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249523 800w,"
-								alt="Todo app"
-							/>
-						</SwiperSlide>
-						<SwiperSlide>
-							<img
-								className="  w-auto h-full object-cover "
-								src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_44_c0-LfGXTMZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249383"
-								srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_44_c0-LfGXTMZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249383 400w,
-								https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_44_c0-LfGXTMZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249383 600w,
-								https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-Todo-frontendmentor-io-2022-09-15-16_35_44_c0-LfGXTMZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663256249383 800w,"
-								alt="Todo app dark mode"
-							/>
-						</SwiperSlide>
-					</Swiper>
+					<div className="md:flex-[2]">
+						<img
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 800w,"
+							alt="Comments section app"
+						/>
+					</div>
 					<article className="projects-article">
 						<h4 className="font-bold text-xl  text-my-accent ">Todo app</h4>
 						<p className="mb-2 ">
@@ -406,14 +355,15 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+				{/* Comments section app */}
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-cover sm:rounded-md"
-							src="https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-comments-section-2022-09-15-16_07_34_nc8fufyZh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255176298"
-							srcSet="https://ik.imagekit.io/nollume/tr:w-400/screencapture-nollume-github-io-comments-section-2022-09-15-16_07_34_nc8fufyZh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255176298 400w,
-							https://ik.imagekit.io/nollume/tr:w-600/screencapture-nollume-github-io-comments-section-2022-09-15-16_07_34_nc8fufyZh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255176298 600w,
-							https://ik.imagekit.io/nollume/tr:w-800/screencapture-nollume-github-io-comments-section-2022-09-15-16_07_34_nc8fufyZh.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663255176298 800w,"
+							className="  w-auto h-full object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220 800w,"
 							alt="Comments section app"
 						/>
 					</div>
@@ -422,8 +372,8 @@ const Projekty = (props: Props) => {
 							Comments section app
 						</h4>
 						<p className="mb-2 ">
-							Responzívna aplikácia umožňujúca pridávať/mazať/upravovať/hodnotiť
-							komentáre alebo príspevky.
+							Responzívna aplikácia (Front-end časť) umožňujúca
+							pridávať/mazať/upravovať/hodnotiť komentáre alebo príspevky.
 						</p>
 						<div className="flex flex-col">
 							<div>

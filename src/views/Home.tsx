@@ -8,6 +8,7 @@ import Fb from '../components/icons/Fb'
 import Git from '../components/icons/Git'
 //@ts-ignore
 import CV from '../assets/CV/Životopis Dorotovič Okt2022.pdf'
+import Linkedin from '../components/icons/Linkedin'
 
 type Props = {}
 
@@ -123,7 +124,7 @@ const Home = (props: Props) => {
 						alt="fotka Mareka"
 					/>
 
-					<div className=" flex flex-col items-center gap-2 px-4 small:px-8 sm:px-4 sm:items-start medium:px-10 sm:w-72 sm:gap-4 md:w-96 xl:w-[40rem]">
+					<div className=" flex flex-col items-center gap-2 px-4 small:px-8 sm:px-4 sm:items-start medium:px-10 sm:w-72 sm:gap-6 md:w-96  xl:w-[40rem]">
 						<a
 							href={CV}
 							download="Marek-Dorotovic-CV.pdf"
@@ -157,6 +158,14 @@ const Home = (props: Props) => {
 								rel="noreferrer"
 							>
 								<Git />
+							</a>
+							<a
+								className="icons"
+								href="https://www.linkedin.com/in/marek-dorotovič-85225b225/"
+								target="_blank"
+								rel="noreferrer"
+							>
+								<Linkedin />
 							</a>
 						</div>
 					</div>
