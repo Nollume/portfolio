@@ -47,19 +47,6 @@
 		text-shadow: 0.0625rem 0.0625rem 0.3125rem #000;
 	}
 
-	.flying {
-		animation: fly 5s infinite ease-in-out;
-	}
-
-	@keyframes fly {
-		0%,
-		100% {
-			transform: translateY(-72%);
-		}
-		50% {
-			transform: translateY(72%);
-		}
-	}
 }
 
 @layer components {
@@ -211,4 +198,5 @@
 	.projects-container section:nth-child(odd) article {
 		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
 	}
+	
 }

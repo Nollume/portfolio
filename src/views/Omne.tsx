@@ -3,6 +3,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import programmer from '../assets/images/icons/icons8-programmer-64.png'
+import fishing from '../assets/icons/undraw_fishing_hoxa.svg'
 
 type Props = {}
 
@@ -11,11 +12,11 @@ const Omne = (props: Props) => {
 		<section id="Omne" className=" pt-14 px-4  medium:px-8">
 			<h3 className=" headline3 mb-4  z-40 medium:mb-8">O mne</h3>
 
-			<div className="flex  items-center justify-start ">
+			<div className="flex flex-col gap-2 items-center justify-start md:flex-row">
 				<ul
 					data-aos="zoom-in-up"
 					data-aos-duration="400"
-					className=" bg-my-light/90 dark:bg-my-bgDark/90 p-4  flex flex-col gap-2 rounded-md md:w-3/4 lg:w-2/3 xl:w-1/2"
+					className="order-2 bg-my-light/90 dark:bg-my-bgDark/90 p-4  flex flex-col gap-2 rounded-md md:order-1 md:flex-1 md:w-3/4 lg:w-2/3 xl:w-1/2"
 				>
 					<li>
 						<p className="cardAbout">
@@ -69,17 +70,10 @@ const Omne = (props: Props) => {
 						</p>
 					</li>
 				</ul>
-				<div className="flying hidden md:block mx-auto xl:hidden">
-					<img src={programmer} alt="computer" />
+				<div className="   mx-auto w-full h-auto small:w-4/5 sm:w-2/3 md:order-2 md:flex-1">
+					<img src={fishing} alt="fishing image" />
 				</div>
-
-				<div className="hidden mx-auto xl:flex relative after:absolute after:inset-0 after:bg-my-accent after:-bottom-8 after:-right-8 after:top-8 after:left-8 after:-z-10 before:absolute before:inset-0 before:my-gradient before:-top-8 before:-left-8 before:bottom-8 before:right-8 before:-z-10">
-					<img
-						className="w-[18.75rem] h-auto "
-						src="https://ik.imagekit.io/nollume/tr:w-400/deva-darshan-S7qbLaINVZ0-unsplash_r2pfjR_AA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663767246144"
-						alt="creek"
-					/>
-				</div>
+			
 			</div>
 		</section>
 	)

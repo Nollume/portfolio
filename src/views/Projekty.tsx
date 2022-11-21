@@ -1,4 +1,5 @@
 import React from 'react'
+import coding from '../assets/icons/undraw_coding_re_iv62.svg'
 
 type Props = {}
 
@@ -12,7 +13,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494 600w,
@@ -58,7 +59,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections">
 					<div className=" md:flex-[2] ">
 						<img
-							className=" w-auto h-full object-contain sm:rounded-md"
+							className=" w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515 600w,
@@ -71,10 +72,9 @@ const Projekty = (props: Props) => {
 							Mark & Lukas music page
 						</h4>
 						<p className="mb-2 ">
-							SPA spravená v Nuxt 3 so vstavaným audio
-							prehrávačom. Použil som iTunes api na zobrazenie krátkych
-							ukážok mojich skladieb ked som sa venoval hudobnej produkcii spolu
-							s bratom.
+							SPA spravená v Nuxt 3 so vstavaným audio prehrávačom. Použil som
+							iTunes api na zobrazenie krátkych ukážok mojich skladieb ked som
+							sa venoval hudobnej produkcii spolu s bratom.
 						</p>
 						<div className="flex flex-col">
 							<div>
@@ -99,7 +99,6 @@ const Projekty = (props: Props) => {
 							<li>VUE.js</li>
 							<li>Tailwind CSS</li>
 							<li>Pinia</li>
-							
 						</ul>
 					</article>
 				</section>
@@ -107,7 +106,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326 600w,
@@ -153,7 +152,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections ">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309 600w,
@@ -166,9 +165,8 @@ const Projekty = (props: Props) => {
 							Countries quiz
 						</h4>
 						<p className="mb-2 ">
-							Kvíz v ktorom sa snažíš uhádnuť krajinu podľa vlajky
-							alebo hlavného mesta. Tiež umožnuje nastaviť krajiny podľa
-							regionu.
+							Kvíz v ktorom sa snažíš uhádnuť krajinu podľa vlajky alebo
+							hlavného mesta. Tiež umožnuje nastaviť krajiny podľa regionu.
 						</p>
 						<div className="flex flex-col">
 							<div>
@@ -189,7 +187,6 @@ const Projekty = (props: Props) => {
 							<li>Nuxt 3</li>
 							<li>VUE.js</li>
 							<li>Tailwind CSS</li>
-							
 						</ul>
 					</article>
 				</section>
@@ -197,7 +194,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections ">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341 600w,
@@ -232,7 +229,7 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections ">
 					<div className="md:flex-[2] ">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501 600w,
@@ -268,11 +265,12 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+
 				{/* tip calculator app */}
 				<section className="projects-sections ">
 					<div className="md:flex-[2] ">
 						<img
-							className=" w-auto h-full object-contain sm:rounded-md"
+							className=" w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 600w,
@@ -318,12 +316,12 @@ const Projekty = (props: Props) => {
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 600w,
 							https://ik.imagekit.io/nollume/tr:w-800/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508 800w,"
-							alt="Comments section app"
+							alt="Todo app"
 						/>
 					</div>
 					<article className="projects-article">
@@ -355,11 +353,12 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+
 				{/* Comments section app */}
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
 						<img
-							className="  w-auto h-full object-contain sm:rounded-md"
+							className="w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220"
 							srcSet="https://ik.imagekit.io/nollume/tr:w-400/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220 400w,
 							https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220 600w,
@@ -367,13 +366,13 @@ const Projekty = (props: Props) => {
 							alt="Comments section app"
 						/>
 					</div>
-					<article className="projects-article">
+					<article className="projects-article ">
 						<h4 className="font-bold text-xl  text-my-accent ">
 							Comments section app
 						</h4>
 						<p className="mb-2 ">
-							Responzívna aplikácia (Front-end časť) umožňujúca
-							pridávať/mazať/upravovať/hodnotiť komentáre alebo príspevky.
+							Responzívna aplikácia front-end časť umožňujúca pridávať, mazať,
+							upravovať, hodnotiť komentáre alebo príspevky.
 						</p>
 						<div className="flex flex-col">
 							<div>
@@ -400,6 +399,13 @@ const Projekty = (props: Props) => {
 							<li>Webpack</li>
 						</ul>
 					</article>
+				</section>
+				<section className="grid place-items-center">
+					<img
+						className="w-4/5 h-auto md:w-1/2 xl:w-4/5"
+						src={coding}
+						alt="coding image"
+					/>
 				</section>
 			</div>
 		</section>
