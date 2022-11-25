@@ -24,22 +24,6 @@ module.exports = {
 					light: 'rgb(226 232 240)',
 				},
 			},
-			animation: {
-				flip: 'flip 1s ease-in-out',
-			},
-			keyframes: {
-				flip: {
-					'0%': {
-						transform: 'rotateY(0deg)',
-					},
-					'50%': {
-						transform: 'rotateY(360deg)',
-					},
-					'100%': {
-						transform: 'rotateY(0deg)',
-					},
-				},
-			},
 		},
 	},
 	plugins: [],

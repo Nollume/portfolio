@@ -117,7 +117,7 @@ const Home = (props: Props) => {
 						</h1>
 					)}
 				</article>
-				<div className=" my-gradient mx-6 py-6 rounded-md shadow-lg shadow-gray-500 flex flex-col items-center gap-4 small:mx-10 sm:px-6 sm:self-center my-auto sm:flex-row lg:m-2  lg:gap-8">
+				<div className=" bg-my-light dark:bg-my-bgDark  mx-6 py-6 rounded-md shadow-lg shadow-gray-500 flex flex-col items-center gap-4 small:mx-10 sm:px-6 sm:self-center my-auto sm:flex-row lg:m-2  lg:gap-8">
 					<img
 						className=" w-56 h-auto rounded-md mx-auto z-20 saturate-50 shadow-xl "
 						src="https://ik.imagekit.io/nollume/tr:w-400/Face_XZve9yJw8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1662707649279"
@@ -128,7 +128,7 @@ const Home = (props: Props) => {
 						<a
 							href={CV}
 							download="Marek-Dorotovic-CV.pdf"
-							className=" bg-my-accent hover:bg-my-accentHover font-bold px-2 py-1 border border-my-dark dark:border-my-light rounded-md duration-300  cursor-pointer sm:order-2"
+							className=" bg-my-accent hover:bg-my-accentHover text-my-dark font-bold px-2 py-1   rounded-md duration-300  cursor-pointer sm:order-2"
 						>
 							Stiahnúť Životopis
 						</a>

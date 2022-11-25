@@ -56,9 +56,7 @@ const IconsCircle = (props: Props) => {
 			onMouseMove={(e: React.MouseEvent) => {
 				handleMouseMove(e)
 			}}
-			onPointerMove={(e: React.PointerEvent) => {
-				handleMouseMove(e)
-			}}
+			
 		>
 			<div className="card">
 				<div className="card-content">

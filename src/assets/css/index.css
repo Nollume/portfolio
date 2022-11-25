@@ -129,9 +129,7 @@
 		z-index: 1;
 	}
 
-	.card:hover .icon {
-		@apply animate-flip;
-	}
+	
 	.card-content {
 		@apply shadow-lg flex flex-col py-1 items-center justify-center bg-my-light dark:bg-my-dark rounded-md absolute inset-[0.125rem] z-[2];
 	}
