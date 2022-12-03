@@ -312,6 +312,49 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
+				{/* Green page */}
+				<section className="projects-sections">
+					<div className="md:flex-[2]">
+						<img
+							className="  w-full h-auto object-contain sm:rounded-md"
+							src="https://ik.imagekit.io/nollume/tr:w-600/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996"
+							srcSet="https://ik.imagekit.io/nollume/tr:w-400/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996 400w,
+							https://ik.imagekit.io/nollume/tr:w-600/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996 600w,
+							https://ik.imagekit.io/nollume/tr:w-800/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996 800w,"
+							alt="Green page"
+						/>
+					</div>
+					<article className="projects-article">
+						<h4 className="font-bold text-xl  text-my-accent ">Green page</h4>
+						<p className="mb-2 ">
+							Responzívna stránka ktorá sa ovláda pomocou šípok do štyroch
+							strán. Obsah stránky je len vymyslený.
+						</p>
+						<div className="flex flex-col">
+							<div>
+								<a
+									className=" projects-a"
+									href="https://github.com/Nollume/green-page"
+								>
+									Zobraziť kód
+								</a>
+							</div>
+							<div>
+								<a
+									className=" projects-a"
+									href="https://green-page.netlify.app/?fbclid=IwAR0TQjRQs5FUm57w8WWhlnfg3VuxbefjeS0zg8pwHm_3J0bWj6GtE73QmBc"
+								>
+									Zobraziť projekt
+								</a>
+							</div>
+						</div>
+						<ul className="projects-ul">
+							<li>SCSS</li>
+							<li>JavaScript</li>
+							<li>Vite</li>
+						</ul>
+					</article>
+				</section>
 				{/* todo */}
 				<section className="projects-sections">
 					<div className="md:flex-[2]">
@@ -400,13 +443,13 @@ const Projekty = (props: Props) => {
 						</ul>
 					</article>
 				</section>
-				<section className="grid place-items-center">
+				<aside className=" grid place-items-center xl:col-span-2 relative">
 					<img
-						className="w-4/5 h-auto md:w-1/2 xl:w-4/5"
+						className="w-4/5 h-auto md:w-1/2 xl:w-1/2"
 						src={coding}
 						alt="coding image"
 					/>
-				</section>
+				</aside>
 			</div>
 		</section>
 	)

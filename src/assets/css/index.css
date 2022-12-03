@@ -36,7 +36,6 @@
 	.my-gradient {
 		background-image: linear-gradient(to left top, #30cfd0 40%, #330867 100%);
 	}
-	
 
 	.my-gradient-text {
 		@apply bg-clip-text;
@@ -46,7 +45,6 @@
 	.text-shadow {
 		text-shadow: 0.0625rem 0.0625rem 0.3125rem #000;
 	}
-
 }
 
 @layer components {
@@ -129,7 +127,6 @@
 		z-index: 1;
 	}
 
-	
 	.card-content {
 		@apply shadow-lg flex flex-col py-1 items-center justify-center bg-my-light dark:bg-my-dark rounded-md absolute inset-[0.125rem] z-[2];
 	}
@@ -196,5 +193,4 @@
 	.projects-container section:nth-child(odd) article {
 		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
 	}
-	
 }
