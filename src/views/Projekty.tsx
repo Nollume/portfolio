@@ -11,7 +11,7 @@ const Projekty = (props: Props) => {
 				{/* NOLLU */}
 
 				<section className="projects-sections">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494"
@@ -57,7 +57,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* M&L page */}
 				<section className="projects-sections">
-					<div className=" md:flex-[2] ">
+					<div className=" md:flex-[2]  ">
 						<img
 							className=" w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515"
@@ -104,7 +104,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* Space tourism multi page website */}
 				<section className="projects-sections">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326"
@@ -150,7 +150,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* Countries quiz */}
 				<section className="projects-sections ">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309"
@@ -192,7 +192,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* Weather app */}
 				<section className="projects-sections ">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341"
@@ -227,7 +227,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* Memory game */}
 				<section className="projects-sections ">
-					<div className="md:flex-[2] ">
+					<div className="md:flex-[2]  ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501"
@@ -268,7 +268,7 @@ const Projekty = (props: Props) => {
 
 				{/* tip calculator app */}
 				<section className="projects-sections ">
-					<div className="md:flex-[2] ">
+					<div className="md:flex-[2]  ">
 						<img
 							className=" w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
@@ -314,7 +314,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* Green page */}
 				<section className="projects-sections">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996"
@@ -357,7 +357,7 @@ const Projekty = (props: Props) => {
 				</section>
 				{/* todo */}
 				<section className="projects-sections">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="  w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
@@ -399,7 +399,7 @@ const Projekty = (props: Props) => {
 
 				{/* Comments section app */}
 				<section className="projects-sections">
-					<div className="md:flex-[2]">
+					<div className="md:flex-[2] ">
 						<img
 							className="w-full h-auto object-contain sm:rounded-md"
 							src="https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220"

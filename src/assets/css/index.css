@@ -165,7 +165,7 @@
 	}
 
 	.projects-sections {
-		@apply sm:mx-4 md:mx-0 md:flex;
+		@apply sm:mx-4 md:mx-0 md:flex md:items-center;
 	}
 	.projects-ul {
 		@apply grid grid-cols-2 font-bold place-items-start border-t my-gradient my-gradient-text border-my-accent my-3 pt-3;
@@ -176,7 +176,7 @@
 	}
 
 	.projects-article {
-		@apply grid md:place-content-center  px-4 py-2 relative  dark:top-0 z-50  small:w-3/4  md:flex-[1];
+		@apply grid  px-4 py-2 relative  dark:top-0 z-50  small:w-3/4  md:flex-[1];
 	}
 
 	.projects-container section:nth-child(odd) {
