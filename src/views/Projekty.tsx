@@ -26,9 +26,9 @@ const Projekty = (props: Props) => {
 							/>
 							<button
 								onClick={() => props.setProjectDetail(project.id)}
-								className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-40 aspect-square rounded-full bg-my-accent capitalize font-bold border border-my-dark hover:animate-ping"
+								className="projects-info-btn "
 							>
-								<p className="absolute bottom-[60%] right-[60%]">
+								<p>
 									<Info />
 								</p>
 							</button>

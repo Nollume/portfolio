@@ -128,7 +128,7 @@ const Home = (props: Props) => {
 						<a
 							href={CV}
 							download="Marek-Dorotovic-CV.pdf"
-							className="my-2 bg-my-accent hover:bg-my-accentHover font-bold px-2 py-1 rounded-md duration-300  cursor-pointer border-2  border-my-dark dark:border-my-light sm:my-0  sm:order-2"
+							className="my-2 bg-my-accent hover:bg-my-accentHover font-bold px-2 py-1 rounded-md duration-300  cursor-pointer border  border-my-dark dark:border-my-light sm:my-0  sm:order-2"
 						>
 							Stiahnúť Životopis
 						</a>

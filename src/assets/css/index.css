@@ -193,6 +193,19 @@
 	.projects-container section:nth-child(odd) article {
 		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
 	}
+	.projects-container section:nth-child(odd) .projects-info-btn {
+		@apply absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-40 aspect-square rounded-full my-gradient capitalize font-bold border-2 border-my-accent hover:animate-ping md:right-[unset] md:left-0 md:-translate-x-1/2 xl:left-[unset] xl:right-0 xl:translate-x-1/2;
+	}
+	.projects-container section:nth-child(odd) .projects-info-btn p {
+		@apply absolute bottom-[60%] right-[60%] md:right-[unset] md:left-[60%] xl:left-[unset] xl:right-[60%];
+	}
+	.projects-container section:nth-child(even) .projects-info-btn {
+		@apply absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-40 aspect-square rounded-full my-gradient capitalize font-bold border-2 border-my-accent hover:animate-ping small:right-[unset] small:left-0 small:-translate-x-1/2 md:left-[unset] md:right-0 md:translate-x-1/2;
+	}
+	.projects-container section:nth-child(even) .projects-info-btn p {
+		@apply absolute bottom-[60%] right-[60%] small:right-[unset] small:left-[60%] md:left-[unset] md:right-[60%];
+	}
+
 	.img-filter {
 		filter: brightness(95%);
 	}
