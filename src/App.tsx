@@ -10,7 +10,7 @@ import Kontakt from './views/Kontakt'
 import TheNavigation from './components/TheNavigation'
 import HamburgerMenu from './components/HamburgerMenu'
 import ModalCertificates from './components/ModalCertificates'
-
+import ProjectDetail from './components/ProjectDetail'
 
 function App() {
 	const [openNav, setopenNav] = useState(false)
@@ -54,6 +54,16 @@ function App() {
 	const handleOpenModal = () => modal.current?.showModal()
 	const handleCloseModal = () => modal.current?.close()
 
+	/**Project detail */
+	const [projectId, setprojectId] = useState<number | null>(null)
+	const [projectDetailOpen, setProjectDetailOpen] = useState<boolean>(false)
+
+	const setProjectDetail = (id: number) => {
+		setprojectId(id)
+		setProjectDetailOpen(true)
+	}
+	const closeProjectDetail = () => setProjectDetailOpen(false)
+
 	useEffect(() => {
 		pageIsTop()
 		viewPortSize()
@@ -96,11 +106,18 @@ function App() {
 					handleToggleMenu={handleToggleMenu}
 				/>
 			</header>
-			<main className="w-full h-full z-10">
+			{projectDetailOpen && (
+				<ProjectDetail
+					projectId={projectId}
+					closeProjectDetail={closeProjectDetail}
+					projectDetailOpen={projectDetailOpen}
+				/>
+			)}
+			<main className="w-full h-full z-10 relative">
 				<Home />
 				<Omne />
 				<Zrucnosti handleOpenModal={handleOpenModal} />
-				<Projekty />
+				<Projekty setProjectDetail={setProjectDetail} />
 				<Kontakt />
 			</main>
 

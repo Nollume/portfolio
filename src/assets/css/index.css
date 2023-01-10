@@ -151,7 +151,7 @@
 	}
 
 	.modal::backdrop {
-		@apply bg-my-accent/10;
+		@apply bg-my-dark/40;
 	}
 
 	.modal::-webkit-scrollbar {
@@ -192,5 +192,8 @@
 	}
 	.projects-container section:nth-child(odd) article {
 		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
+	}
+	.img-filter {
+		filter: brightness(95%);
 	}
 }

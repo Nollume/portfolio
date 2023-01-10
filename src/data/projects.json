@@ -1,7 +1,7 @@
 [
 	{
 		"title": "Nollu chat app",
-		"id": "1",
+		"id": 1,
 		"description": "Chat aplikácia zatial iba mobilný dizajn. Umožňuje pridávať vyhľadávať priateľov, chatovať, upravovať profil, meniť fotku...Použitý firebase na databázu a autentifikáciu.",
 		"altDescription": "Nollu chat app",
 		"images": {
@@ -15,7 +15,7 @@
 	},
 	{
 		"title": "Mark & Lukas music page",
-		"id": "2",
+		"id": 2,
 		"description": "SPA spravená v Nuxt 3 so vstavaným audio prehrávačom. Použil som iTunes api na zobrazenie krátkych ukážok mojich skladieb ked som sa venoval hudobnej produkcii spolu s bratom.",
 		"altDescription": "M&L page",
 		"images": {
@@ -29,7 +29,7 @@
 	},
 	{
 		"title": "Management app",
-		"id": "3",
+		"id": 3,
 		"description": "Manažment app, umožňuje vytvárať plochy do ktorých sa dajú pridávať úlohy a presúvať ich do stĺpcov podľa toho či je úloha v stave Todo, Doing alebo Done tiež je možné vytvoriť si vlastný stĺpec. Nepoužíva databázu ale všetko sa ukladá na LocalStorage.",
 		"altDescription": "Management app",
 		"images": {
@@ -43,7 +43,7 @@
 	},
 	{
 		"title": "Space tourism multi page website",
-		"id": "4",
+		"id": 4,
 		"description": "Responzívna (SPA) stránka spravená vo VUE.js + práca s Axios API.",
 		"altDescription": "Space tourism page",
 		"images": {
@@ -57,7 +57,7 @@
 	},
 	{
 		"title": "Countries quiz",
-		"id": "5",
+		"id": 5,
 		"description": "Kvíz v ktorom sa snažíš uhádnuť krajinu podľa vlajky alebo hlavného mesta. Tiež umožnuje nastaviť krajiny podľa regionu.",
 		"altDescription": "Countries quiz",
 		"images": {
@@ -71,7 +71,7 @@
 	},
 	{
 		"title": "Weather app",
-		"id": "6",
+		"id": 6,
 		"description": "Jednoduchá aplikácia ktorá zobrazuje momentálne počasie v okolí. Tiež umožňuje vyhľadávať počasie podľa zadaného mesta.",
 		"altDescription": "Weather app",
 		"images": {
@@ -85,7 +85,7 @@
 	},
 	{
 		"title": "Memory game",
-		"id": "7",
+		"id": 7,
 		"description": "Pamäťová hra (pexeso).",
 		"altDescription": "Memory game",
 		"images": {
@@ -99,7 +99,7 @@
 	},
 	{
 		"title": "Tip calculator app",
-		"id": "8",
+		"id": 8,
 		"description": "Responzívna aplikácia na prepočet prepitného/tringeltu medzi viac osôb.",
 		"altDescription": "Tip calculator app",
 		"images": {
@@ -113,7 +113,7 @@
 	},
 	{
 		"title": "Green page",
-		"id": "9",
+		"id": 9,
 		"description": "Responzívna stránka ktorá sa ovláda pomocou šípok do štyroch strán. Obsah stránky je len vymyslený. Stránka nie je úplne dokončená.",
 		"altDescription": "Green page",
 		"images": {
@@ -127,7 +127,7 @@
 	},
 	{
 		"title": "Todo app",
-		"id": "10",
+		"id": 10,
 		"description": "Responzívna TODO aplikácia spravená vo VUE.js s light/dark módom. Iba front-end časť bez databázy.",
 		"altDescription": "Todo app",
 		"images": {
@@ -141,7 +141,7 @@
 	},
 	{
 		"title": "Comments section app",
-		"id": "11",
+		"id": 11,
 		"description": "Responzívna aplikácia front-end časť bez databázy umožňujúca pridávať, mazať, upravovať, hodnotiť komentáre alebo príspevky.",
 		"altDescription": "Comments section app",
 		"images": {
