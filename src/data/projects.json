@@ -1,0 +1,156 @@
+[
+	{
+		"title": "Nollu chat app",
+		"id": "1",
+		"description": "Chat aplikácia zatial iba mobilný dizajn. Umožňuje pridávať vyhľadávať priateľov, chatovať, upravovať profil, meniť fotku...Použitý firebase na databázu a autentifikáciu.",
+		"altDescription": "Nollu chat app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/nollu_8x8W-DHG3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785494"
+		},
+		"codeUrl": "https://github.com/Nollume/Nollu-chat-app",
+		"projdectUrl": "https://nollu-9fc76.web.app/",
+		"technologies": ["VUE.js", "Tailwind", "Pinia", "Firebase", "Vite"]
+	},
+	{
+		"title": "Mark & Lukas music page",
+		"id": "2",
+		"description": "SPA spravená v Nuxt 3 so vstavaným audio prehrávačom. Použil som iTunes api na zobrazenie krátkych ukážok mojich skladieb ked som sa venoval hudobnej produkcii spolu s bratom.",
+		"altDescription": "M&L page",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/markandlukasmusic_4uoP2VHie3.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785515"
+		},
+		"codeUrl": "https://github.com/Nollume/M-L",
+		"projdectUrl": "https://markandlukas.netlify.app",
+		"technologies": ["Nuxt 3", "VUE.js", "Tailwind", "Pinia", "TypeScript"]
+	},
+	{
+		"title": "Management app",
+		"id": "3",
+		"description": "Manažment app, umožňuje vytvárať plochy do ktorých sa dajú pridávať úlohy a presúvať ich do stĺpcov podľa toho či je úloha v stave Todo, Doing alebo Done tiež je možné vytvoriť si vlastný stĺpec. Nepoužíva databázu ale všetko sa ukladá na LocalStorage.",
+		"altDescription": "Management app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/smartmockups_lcq2ypud_jg6IqJeYy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673345975277",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/smartmockups_lcq2ypud_jg6IqJeYy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673345975277",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/smartmockups_lcq2ypud_jg6IqJeYy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1673345975277"
+		},
+		"codeUrl": "https://github.com/Nollume/task-management-app",
+		"projdectUrl": "https://task-management-app-inky.vercel.app",
+		"technologies": ["Nuxt 3", "VUE.js", "Tailwind", "Pinia", "TypeScript"]
+	},
+	{
+		"title": "Space tourism multi page website",
+		"id": "4",
+		"description": "Responzívna (SPA) stránka spravená vo VUE.js + práca s Axios API.",
+		"altDescription": "Space tourism page",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/space_hW36YBAxi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785326"
+		},
+		"codeUrl": "https://github.com/Nollume/Space-tourism-multi-page-website",
+		"projdectUrl": "https://nollume.github.io/Space-tourism-multi-page-website/",
+		"technologies": ["VUE.js", "SCSS", "Pinia", "Vite"]
+	},
+	{
+		"title": "Countries quiz",
+		"id": "5",
+		"description": "Kvíz v ktorom sa snažíš uhádnuť krajinu podľa vlajky alebo hlavného mesta. Tiež umožnuje nastaviť krajiny podľa regionu.",
+		"altDescription": "Countries quiz",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/quizCountries_PXiH_dUsA.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785309"
+		},
+		"codeUrl": "https://github.com/Nollume/Quiz-countries",
+		"projdectUrl": "https://quizool.netlify.app",
+		"technologies": ["Nuxt 3", "VUE.js", "Tailwind"]
+	},
+	{
+		"title": "Weather app",
+		"id": "6",
+		"description": "Jednoduchá aplikácia ktorá zobrazuje momentálne počasie v okolí. Tiež umožňuje vyhľadávať počasie podľa zadaného mesta.",
+		"altDescription": "Weather app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/weather_he7nOKepR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785341"
+		},
+		"codeUrl": "https://github.com/Nollume/Current-weather-app",
+		"projdectUrl": null,
+		"technologies": ["React", "Tailwind"]
+	},
+	{
+		"title": "Memory game",
+		"id": "7",
+		"description": "Pamäťová hra (pexeso).",
+		"altDescription": "Memory game",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/memoryGame_-AjLUoUV8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785501"
+		},
+		"codeUrl": "https://github.com/Nollume/Memory-game",
+		"projdectUrl": "https://velvety-crepe-9c1e44.netlify.app",
+		"technologies": ["Nuxt 3", "VUE.js", "SCSS"]
+	},
+	{
+		"title": "Tip calculator app",
+		"id": "8",
+		"description": "Responzívna aplikácia na prepočet prepitného/tringeltu medzi viac osôb.",
+		"altDescription": "Tip calculator app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/tipCalculator_w7g8KGIpb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
+		},
+		"codeUrl": "https://github.com/Nollume/tip-calculator-app-main",
+		"projdectUrl": "https://nollume.github.io/tip-calculator-app-main/",
+		"technologies": ["JavaScript", "CSS", "HTML"]
+	},
+	{
+		"title": "Green page",
+		"id": "9",
+		"description": "Responzívna stránka ktorá sa ovláda pomocou šípok do štyroch strán. Obsah stránky je len vymyslený. Stránka nie je úplne dokončená.",
+		"altDescription": "Green page",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/smartmockups_lb7shm0f_McDZ-q1mb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1670063265996"
+		},
+		"codeUrl": "https://github.com/Nollume/green-page",
+		"projdectUrl": "https://green-page.netlify.app/?fbclid=IwAR0TQjRQs5FUm57w8WWhlnfg3VuxbefjeS0zg8pwHm_3J0bWj6GtE73QmBc",
+		"technologies": ["JavaScript", "SCSS", "Vite"]
+	},
+	{
+		"title": "Todo app",
+		"id": "10",
+		"description": "Responzívna TODO aplikácia spravená vo VUE.js s light/dark módom. Iba front-end časť bez databázy.",
+		"altDescription": "Todo app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/todo_ioQDBKNHXp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785508"
+		},
+		"codeUrl": "https://github.com/Nollume/Todo-frontendmentor.io",
+		"projdectUrl": "https://nollume.github.io/Todo-frontendmentor.io/",
+		"technologies": ["VUE.js", "SCSS"]
+	},
+	{
+		"title": "Comments section app",
+		"id": "11",
+		"description": "Responzívna aplikácia front-end časť bez databázy umožňujúca pridávať, mazať, upravovať, hodnotiť komentáre alebo príspevky.",
+		"altDescription": "Comments section app",
+		"images": {
+			"w400": "https://ik.imagekit.io/nollume/tr:w-400/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220",
+			"w600": "https://ik.imagekit.io/nollume/tr:w-600/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220",
+			"w800": "https://ik.imagekit.io/nollume/tr:w-800/commentSection_imhb-PyUY.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1668944785220"
+		},
+		"codeUrl": "https://github.com/Nollume/comments-section",
+		"projdectUrl": "https://nollume.github.io/comments-section/",
+		"technologies": ["JavaScript", "SCSS", "HTML", "Webpack"]
+	}
+]
