@@ -14,7 +14,12 @@ const Projekty = (props: Props) => {
 			<h3 className="headline3 mb-4  px-1 z-40">projekty</h3>
 			<div className="projects-container  grid grid-cols-1 gap-10 md:mx-8 md:gap-8 xl:grid-cols-2 xl:gap-x-12 ">
 				{data.map((project) => (
-					<section key={project.id} className="projects-sections">
+					<section
+						data-aos="zoom-in-up"
+						data-aos-duration="400"
+						key={project.id}
+						className="projects-sections"
+					>
 						<div className="relative overflow-hidden md:flex-[2]">
 							<img
 								className="img-filter w-full h-auto object-contain sm:rounded-md"
@@ -61,7 +66,11 @@ const Projekty = (props: Props) => {
 					</section>
 				))}
 				{/* xl:col-span-2 */}
-				<aside className=" grid place-items-center  relative">
+				<aside
+					data-aos="zoom-in-up"
+					data-aos-duration="400"
+					className=" grid place-items-center  relative"
+				>
 					<img
 						className="w-4/5 h-auto md:w-1/2 xl:w-1/2"
 						src={coding}

@@ -76,7 +76,7 @@ function App() {
 	}, [])
 
 	return (
-		<div className="App overflow-hidden">
+		<div className="App">
 			{pageloading && (
 				<div className="bg-my-light dark:bg-my-bgDark text-3xl fixed inset-0 grid place-content-center z-[99999]">
 					Loading...

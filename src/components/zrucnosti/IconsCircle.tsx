@@ -33,18 +33,15 @@ const IconsCircle = (props: Props) => {
 	}, [])
 
 	const handleMouseMove = (e: React.MouseEvent | React.PointerEvent) => {
-		// @ts-ignore
-		const cards = Array.from(cardContainer.current?.children)
+		const cards = Array.from(cardContainer.current!.children) as HTMLElement[]
 
-		for (const card of cards) {
+		for (let card of cards) {
 			const rect = card.getBoundingClientRect(),
-				// @ts-ignore
 				x = e.clientX - rect.left,
-				// @ts-ignore
 				y = e.clientY - rect.top
-			// @ts-ignore
+
 			card.style.setProperty('--mouse-x', `${x}px`)
-			// @ts-ignore
+
 			card.style.setProperty('--mouse-y', `${y}px`)
 		}
 	}
@@ -56,7 +53,6 @@ const IconsCircle = (props: Props) => {
 			onMouseMove={(e: React.MouseEvent) => {
 				handleMouseMove(e)
 			}}
-			
 		>
 			<div className="card">
 				<div className="card-content">

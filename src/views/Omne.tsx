@@ -2,7 +2,6 @@ import React from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import programmer from '../assets/images/icons/icons8-programmer-64.png'
 import fishing from '../assets/icons/undraw_fishing_hoxa.svg'
 
 type Props = {}
@@ -63,17 +62,25 @@ const Omne = (props: Props) => {
 					<li>
 						<p className="cardAbout">
 							{' '}
-							<strong className="text-my-accent">
-								2023/2024 - Plány do budúcna:{' '}
-							</strong>{' '}
-							Node.js - Express.js, MongoDb, PHP - Laravel, Ionic
+							<strong className="text-my-accent">2023: </strong> Momentálne sa
+							učím Node.js - Express.js + databázy
+						</p>
+					</li>
+					<li>
+						<p className="cardAbout">
+							{' '}
+							<strong className="text-my-accent">Plány do budúcna: </strong> PHP
+							- Laravel, Ionic
 						</p>
 					</li>
 				</ul>
-				<div className="   mx-auto w-full h-auto small:w-4/5 sm:w-2/3 md:order-2 md:flex-1">
+				<div
+					data-aos="zoom-in-up"
+					data-aos-duration="400"
+					className="   mx-auto w-full h-auto small:w-4/5 sm:w-2/3 md:order-2 md:flex-1"
+				>
 					<img src={fishing} alt="fishing image" />
 				</div>
-			
 			</div>
 		</section>
 	)
