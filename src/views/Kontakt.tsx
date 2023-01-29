@@ -77,6 +77,7 @@ const Kontakt = (props: Props) => {
 				onSubmit={sendEmail}
 				className=" p-4 w-full text-my-light bg-my-dark/80 backdrop-blur rounded-md md:my-16  md:flex-1 md:flex md:items-center md:px-16 lg:py-16 lg:flex-row-reverse"
 			>
+			
 				<div className="flex flex-col text-shadow  medium:items-center md:flex-[1.5] relative lg:flex-1">
 					<h4 className="font-bold text-xl text-center md:mr-auto mb-4  lg:mx-auto">
 						Kontaktujte ma

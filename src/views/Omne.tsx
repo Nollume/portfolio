@@ -15,7 +15,7 @@ const Omne = (props: Props) => {
 				<ul
 					data-aos="zoom-in-up"
 					data-aos-duration="400"
-					className="order-2 bg-my-light/90 dark:bg-my-bgDark/90 p-4  flex flex-col gap-2 rounded-md md:order-1 md:flex-1 md:w-3/4 lg:w-2/3 xl:w-1/2"
+					className="order-2 bg-my-light/90 dark:bg-my-bgDark/90  flex flex-col gap-2 rounded-md md:order-1 md:flex-1 md:w-3/4 lg:w-2/3 xl:w-1/2"
 				>
 					<li>
 						<p className="cardAbout">
@@ -36,8 +36,8 @@ const Omne = (props: Props) => {
 							{' '}
 							<strong className="text-my-accent">2012/2022: </strong>
 							Hned po škole som začal pracovať vystriedal som viac pracovných
-							oblastí. Venoval som sa hudobnej produkcii čomu sa stále venujem
-							ako hobby.
+							oblastí najdlhšie som pracoval v drevospracujúcom priemysele.
+							Venoval som sa hudobnej produkcii čomu sa stále venujem ako hobby.
 						</p>
 					</li>
 					<li>

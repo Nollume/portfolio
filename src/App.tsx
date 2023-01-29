@@ -15,7 +15,6 @@ import ProjectDetail from './components/ProjectDetail'
 function App() {
 	const [openNav, setopenNav] = useState(false)
 	const [top, settop] = useState(true)
-	const [pageloading, setpageloading] = useState(true)
 	const modal = useRef<HTMLDialogElement>(null)
 
 	function handleToggleMenu(): void {
@@ -60,28 +59,21 @@ function App() {
 
 	const setProjectDetail = (id: number) => {
 		setprojectId(id)
-		setProjectDetailOpen(true)
+		setTimeout(() => {
+			setProjectDetailOpen(true)
+		}, 100)
 	}
-	const closeProjectDetail = () => setProjectDetailOpen(false)
+	const closeProjectDetail = () => {
+		setProjectDetailOpen(false)
+	}
 
 	useEffect(() => {
 		pageIsTop()
 		viewPortSize()
 	}, [top])
 
-	useEffect(() => {
-		setTimeout(() => {
-			setpageloading(false)
-		}, 1000)
-	}, [])
-
 	return (
 		<div className="App">
-			{pageloading && (
-				<div className="bg-my-light dark:bg-my-bgDark text-3xl fixed inset-0 grid place-content-center z-[99999]">
-					Loading...
-				</div>
-			)}
 			<dialog ref={modal} className=" modal p-0 w-[80%] h-[80%]">
 				<ModalCertificates handleCloseModal={handleCloseModal} />
 			</dialog>
@@ -93,13 +85,10 @@ function App() {
 							: 'absolute w-full h-full  bg-black/80 scale-y-100 origin-top transition-all duration-200 ease-in-out'
 					}
 				></div>
-
 				<span className=" flex items-center mr-auto isolate m-2 md:z-50 ">
 					<ThemeIcon />
 				</span>
-
 				{openNav && <TheNavigation onCloseNavigation={onCloseNavigation} />}
-
 				<HamburgerMenu
 					top={top}
 					openNav={openNav}
@@ -120,7 +109,6 @@ function App() {
 				<Projekty setProjectDetail={setProjectDetail} />
 				<Kontakt />
 			</main>
-
 			<footer className=" w-full flex flex-row-reverse gap-2 items-center justify-center text-sm absolute bottom-0 z-20">
 				<p className="small:hidden">|</p>
 				<p>&copy;/2022</p>

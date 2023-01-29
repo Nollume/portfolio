@@ -36,6 +36,9 @@
 	.my-gradient {
 		background-image: linear-gradient(to left top, #30cfd0 40%, #330867 100%);
 	}
+	.my-gradient-hover {
+		background-image: linear-gradient(to left top, #4cd5d6 40%, #430a87 100%);
+	}
 
 	.my-gradient-text {
 		@apply bg-clip-text;
@@ -44,6 +47,94 @@
 
 	.text-shadow {
 		text-shadow: 0.0625rem 0.0625rem 0.3125rem #000;
+	}
+	.chevrons {
+		animation: bounceIt 5s infinite;
+	}
+	@keyframes bounceIt {
+		0% {
+			transform: translateX(0);
+			rotate: -90deg;
+		}
+		45% {
+			transform: translateX(0);
+		}
+		50% {
+			transform: translateX(1.25rem);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		55% {
+			transform: translateX(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+		60% {
+			transform: translateX(0.75rem);
+			animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+		}
+		65% {
+			transform: translateX(0);
+			animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+		}
+
+		100% {
+			transform: translateX(0);
+			rotate: -90deg;
+		}
+	}
+	.main-title {
+		animation: fadeRight 0.5s forwards ease-in-out;
+	}
+	@keyframes fadeRight {
+		0% {
+			opacity: 0;
+			transform: translateX(100%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	.name {
+		animation: fadeLeft 0.3s forwards ease-in-out;
+		animation-delay: 500ms;
+	}
+	@keyframes fadeLeft {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+		100% {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+	.main-title-rear {
+		animation: fade 0.3s forwards ease-in-out;
+		animation-delay: 800ms;
+	}
+	@keyframes fade {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+		100% {
+			opacity: 0.1;
+			transform: scale(1);
+		}
+	}
+	.opacity-fade {
+		animation: opacityChange 0.5s forwards ease-in-out;
+		opacity: 0;
+	}
+	@keyframes opacityChange {
+		0% {
+			opacity: 0;
+			transform: scale(0);
+		}
+		100% {
+			opacity: 1;
+			transform: scale(1);
+		}
 	}
 }
 
@@ -195,20 +286,20 @@
 	.projects-container section:nth-child(odd) article {
 		@apply md:relative md:before:absolute md:before:w-2 md:before:h-full md:before:bg-my-accent md:before:right-full md:before:rounded-md lg:before:hidden small:mr-4 small:ml-auto  xl:mr-0 xl:ml-4;
 	}
-	.projects-container section:nth-child(odd) .projects-info-btn {
-		@apply absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-40 aspect-square rounded-full my-gradient capitalize font-bold border-2 border-my-accent hover:animate-ping md:right-[unset] md:left-0 md:-translate-x-1/2 xl:left-[unset] xl:right-0 xl:translate-x-1/2;
-	}
-	.projects-container section:nth-child(odd) .projects-info-btn p {
-		@apply absolute bottom-[60%] right-[60%] md:right-[unset] md:left-[60%] xl:left-[unset] xl:right-[60%];
-	}
-	.projects-container section:nth-child(even) .projects-info-btn {
-		@apply absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-40 aspect-square rounded-full my-gradient capitalize font-bold border-2 border-my-accent hover:animate-ping small:right-[unset] small:left-0 small:-translate-x-1/2 md:left-[unset] md:right-0 md:translate-x-1/2;
-	}
-	.projects-container section:nth-child(even) .projects-info-btn p {
-		@apply absolute bottom-[60%] right-[60%] small:right-[unset] small:left-[60%] md:left-[unset] md:right-[60%];
-	}
 
 	.img-filter {
 		filter: brightness(95%);
+	}
+
+	#Domov {
+		@apply relative after:absolute before:absolute;
+	}
+	#Domov::after {
+		@apply w-80 aspect-square right-0 top-0 translate-x-1/2 -z-30 medium:w-96 md:top-10 md:w-[31.25rem] xl:w-[65rem] xl:-top-40 twoxl:w-[85rem] twoxl:translate-x-0 twoxl:-top-80 twoxl:-right-24;
+		background: radial-gradient(hsla(164, 100%, 35%, 0.4), transparent 50%);
+	}
+	#Domov::before {
+		@apply w-60 aspect-square left-0 bottom-16 -translate-x-1/4 -z-30 medium:w-80 md:-translate-x-[40%] md:w-[30rem] twoxl:w-[40rem] twoxl:-bottom-20 twoxl:-translate-x-0 twoxl:-left-24;
+		background: radial-gradient(hsla(180, 63%, 50%, 0.3), transparent 50%);
 	}
 }

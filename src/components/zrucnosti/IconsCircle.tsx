@@ -24,6 +24,8 @@ import vitest from '../../assets/icons/vitest-seeklogo.com.svg'
 import YarnIcon from '../icons/YarnIcon'
 import PiniaIcon from '../icons/PiniaIcon'
 
+import drink from '../../assets/icons/undraw_refreshing_beverage_td3r.svg'
+
 type Props = {}
 
 const IconsCircle = (props: Props) => {
@@ -49,11 +51,17 @@ const IconsCircle = (props: Props) => {
 	return (
 		<div
 			ref={cardContainer}
-			className=" cards"
+			className=" cards relative"
 			onMouseMove={(e: React.MouseEvent) => {
 				handleMouseMove(e)
 			}}
 		>
+			{' '}
+			<img
+				src={drink}
+				className="hidden absolute w-20 bottom-full left-0 small:block"
+				alt=""
+			/>
 			<div className="card">
 				<div className="card-content">
 					<p className="">HTML</p>
@@ -144,7 +152,6 @@ const IconsCircle = (props: Props) => {
 					</p>
 				</div>
 			</div>
-
 			<div className="card">
 				<div className="card-content">
 					<p>TypeScript</p>
@@ -155,7 +162,6 @@ const IconsCircle = (props: Props) => {
 					</p>
 				</div>
 			</div>
-
 			<div className="card">
 				<div className="card-content">
 					<p>Webpack</p>
@@ -166,7 +172,6 @@ const IconsCircle = (props: Props) => {
 					</p>
 				</div>
 			</div>
-
 			<div className="card">
 				<div className="card-content">
 					<p>Npm</p>

@@ -29,18 +29,10 @@ const Projekty = (props: Props) => {
 								${project.images.w800} 800w,`}
 								alt={project.altDescription}
 							/>
-							<button
-								onClick={() => props.setProjectDetail(project.id)}
-								className="projects-info-btn "
-							>
-								<p>
-									<Info />
-								</p>
-							</button>
 						</div>
 
 						<article className="projects-article ">
-							<h4 className="font-bold text-xl  text-my-accent ">
+							<h4 className="font-bold text-xl   ">
 								{project.title}
 							</h4>
 							<div className="flex flex-col">
@@ -62,20 +54,26 @@ const Projekty = (props: Props) => {
 									<li key={technology}>{technology}</li>
 								))}
 							</ul>
+							<div>
+								<button
+									onClick={() => props.setProjectDetail(project.id)}
+									className=" hover:text-my-accentHover duration-300"
+								>
+									<p className="flex items-center gap-2 underline underline-offset-2">
+										<Info /> Viac info
+									</p>
+								</button>
+							</div>
 						</article>
 					</section>
 				))}
-				{/* xl:col-span-2 */}
+				{/* xl:col-span-2 md:w-1/2 xl:w-1/2 */}
 				<aside
 					data-aos="zoom-in-up"
 					data-aos-duration="400"
 					className=" grid place-items-center  relative"
 				>
-					<img
-						className="w-4/5 h-auto md:w-1/2 xl:w-1/2"
-						src={coding}
-						alt="coding image"
-					/>
+					<img className="w-4/5 h-auto " src={coding} alt="coding image" />
 				</aside>
 			</div>
 		</section>

@@ -6,7 +6,7 @@ const Info = (props: Props) => {
 	return (
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
-			className="stroke-my-light w-8 h-8"
+			className="stroke-current w-8 h-8"
 			width="44"
 			height="44"
 			viewBox="0 0 24 24"
