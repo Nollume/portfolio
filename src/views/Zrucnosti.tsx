@@ -13,7 +13,7 @@ const Zrucnosti = (props: Props) => {
 			id="Zrucnosti"
 			className="min-h-screen mx-4 pt-14 grid grid-rows-[1.5rem_3rem_1fr_13.5rem] gap-y-4 small:grid-cols-4 small:grid-rows-[2rem_1fr_10rem] medium:grid-rows-[2.5rem_1fr_10rem] medium:mx-8 xl:grid-cols-5 sm:grid-rows-[2.8rem_1fr_10rem] lg:grid-rows-[3rem_1fr_10rem] xl:grid-rows-[3rem__16rem_16rem] xl:gap-4 lg:min-h-min"
 		>
-			<h3 className="headline3   px-1 z-40 small:col-span-4 xl:col-span-5 ">
+			<h3 className="headline3   px-1 z-40 small:col-span-4 xl:col-span-5">
 				Moje Zručnosti
 			</h3>
 
@@ -27,7 +27,7 @@ const Zrucnosti = (props: Props) => {
 				<Certificate />
 				<img
 					src={drink}
-					className="absolute w-14 bottom-full right-0 small:hidden"
+					className=" absolute w-14 bottom-full right-0 small:hidden "
 				/>
 			</button>
 			<IconsCircle />

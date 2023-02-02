@@ -59,7 +59,7 @@ const IconsCircle = (props: Props) => {
 			{' '}
 			<img
 				src={drink}
-				className="hidden absolute w-20 bottom-full left-0 small:block"
+				className="hidden absolute w-20 bottom-full small:block"
 				alt=""
 			/>
 			<div className="card">

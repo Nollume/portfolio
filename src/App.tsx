@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { debounce } from 'lodash'
 
+
 import Home from './views/Home'
 import ThemeIcon from './components/ThemeIcon'
 import Omne from './views/Omne'
@@ -15,7 +16,6 @@ import ProjectDetail from './components/ProjectDetail'
 function App() {
 	const [openNav, setopenNav] = useState(false)
 	const [top, settop] = useState(true)
-	const modal = useRef<HTMLDialogElement>(null)
 
 	function handleToggleMenu(): void {
 		setopenNav(!openNav)
@@ -50,8 +50,19 @@ function App() {
 		setopenNav(data)
 	}
 
-	const handleOpenModal = () => modal.current?.showModal()
-	const handleCloseModal = () => modal.current?.close()
+	/**
+	 *
+	 * certificates modal
+	 */
+	const [certificatesModal, setCertificatesModal] = useState<boolean>(false)
+	const handleOpenModal = () => {
+		setTimeout(() => {
+			setCertificatesModal(true)
+		}, 100)
+	}
+	const handleCloseModal = () => {
+		setCertificatesModal(false)
+	}
 
 	/**Project detail */
 	const [projectId, setprojectId] = useState<number | null>(null)
@@ -59,6 +70,7 @@ function App() {
 
 	const setProjectDetail = (id: number) => {
 		setprojectId(id)
+
 		setTimeout(() => {
 			setProjectDetailOpen(true)
 		}, 100)
@@ -73,10 +85,7 @@ function App() {
 	}, [top])
 
 	return (
-		<div className="App">
-			<dialog ref={modal} className=" modal p-0 w-[80%] h-[80%]">
-				<ModalCertificates handleCloseModal={handleCloseModal} />
-			</dialog>
+		<div className="App ">
 			<header className="w-full h-12  fixed top-0 z-30 flex">
 				<div
 					className={
@@ -100,6 +109,12 @@ function App() {
 					projectId={projectId}
 					closeProjectDetail={closeProjectDetail}
 					projectDetailOpen={projectDetailOpen}
+				/>
+			)}
+			{certificatesModal && (
+				<ModalCertificates
+					handleCloseModal={handleCloseModal}
+					certificatesModal={certificatesModal}
 				/>
 			)}
 			<main className="w-full h-full z-10 relative">

@@ -16,6 +16,7 @@ import cssIcon from '../assets/icons/icons8-css3-48.png'
 import javaScript from '../assets/icons/icons8-javascript-48.png'
 import vueJs from '../assets/icons/icons8-vue-js-48.png'
 import typeScript from '../assets/icons/icons8-typescript-48.png'
+import Download from '../components/icons/Download'
 
 type Props = {}
 
@@ -23,10 +24,10 @@ const Home = (props: Props) => {
 	return (
 		<section
 			id="Domov"
-			className="flex flex-col  z-10 min-h-screen pt-14 pb-4 overflow-hidden md:pt-20 md:min-h-max xl:min-h-screen  "
+			className="flex flex-col  z-10 min-h-screen pt-14 pb-4 overflow-hidden md:pt-20 md:min-h-max xl:min-h-screen "
 		>
 			<HomeTitles />
-			<div className="relative flex flex-col justify-evenly flex-1 gap-4 my-4 md:block xl:flex xl:flex-row">
+			<div className="relative flex flex-col justify-evenly flex-1 gap-4 my-4 md:block xl:flex xl:flex-row ">
 				<div className="relative w-[90%] mx-auto small:w-4/5 md:w-[35rem] md:mx-0 md:-left-14 lg:w-[40rem] xl:w-[45rem] xl:left-10 twoxl:w-[50rem]">
 					<img className="" src={programming} alt="programming" />
 					<div className="w-6 opacity-fade small:block absolute top-1/2 right-10 -translate-y-1/2 rotate-[15deg] small:w-8 sm:w-10 md:right-24 md:w-12">
@@ -55,10 +56,10 @@ const Home = (props: Props) => {
 					<a
 						href={CV}
 						download="Marek-Dorotovic-CV.pdf"
-						className=" my-gradient hover:my-gradient-hover text-my-light font-bold px-4 py-2 rounded-md duration-300  cursor-pointer border border-my-dark absolute z-50 -left-4 bottom-0 translate-y-1/2
+						className="flex items-center my-gradient hover:my-gradient-hover text-my-light font-bold p-2 rounded-md duration-300  cursor-pointer border border-my-dark absolute z-50 -left-4 bottom-0 translate-y-1/2
 							md:bottom-full md:left-[unset] md:right-1/4 md:translate-x-1/2"
 					>
-						Stiahnúť Životopis
+						<Download /> Stiahnúť Životopis
 					</a>
 
 					<img
