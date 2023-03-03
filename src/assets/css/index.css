@@ -186,6 +186,9 @@
 	.nav-link::after {
 		@apply w-full h-0.5 bg-my-accent scale-x-0 origin-left -bottom-1 left-0 transition-all duration-200 ease-in-out;
 	}
+	.icon{
+		@apply max-w-[3rem] aspect-square;
+	}
 	.headLine2 {
 		line-height: 1;
 		font-size: clamp(1rem, 8vw, 3.75rem);
@@ -197,41 +200,12 @@
 		font-size: clamp(1rem, 6.5vw, 3rem);
 		@apply font-bold uppercase whitespace-nowrap text-center;
 	}
-	.cards {
-		@apply grid grid-cols-3 gap-1 select-none small:row-start-2 small:col-span-4 sm:grid-cols-4 lg:grid-cols-5 xl:row-span-2 xl:grid-cols-6;
-	}
 
 	.card {
 		@apply flex flex-col items-center justify-center  bg-my-dark/10  dark:bg-my-light/10 rounded-md relative min-h-[7rem] after:absolute;
 	}
-	/* .card {
-		@apply hover:before:opacity-100;
-	} */
-	/* .card::before {
-		@apply absolute rounded-md h-full w-full left-0 opacity-0 top-0 duration-500;
-	} */
-	/* .card::before {
-		background: radial-gradient(
-			25rem circle at var(--mouse-x) var(--mouse-y),
-			#00b485,
-			transparent 40%
-		);
-		z-index: 3;
-	} */
-	.card::after {
-		@apply rounded-md h-full w-full left-0 opacity-0 top-0 duration-500;
-	}
-	.cards:hover > .card::after {
-		@apply opacity-100;
-	}
-	.card::after {
-		background: radial-gradient(
-			15rem circle at var(--mouse-x) var(--mouse-y),
-			#00d69e,
-			transparent 40%
-		);
-		z-index: 1;
-	}
+
+	
 
 	.card-content {
 		@apply shadow-lg flex flex-col py-1 items-center justify-center bg-my-light dark:bg-my-dark rounded-md absolute inset-[0.125rem] z-[2];

@@ -1,269 +1,48 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
-import vite from '../../assets/icons/vitejs.svg'
-import html from '../../assets/icons/icons8-html-5-48.png'
-import cssIcon from '../../assets/icons/icons8-css3-48.png'
-import javaScript from '../../assets/icons/icons8-javascript-48.png'
-import vueJs from '../../assets/icons/icons8-vue-js-48.png'
-import react from '../../assets/icons/icons8-react-100.png'
-import jquery from '../../assets/icons/icons8-jquery-50.png'
-import typeScript from '../../assets/icons/icons8-typescript-48.png'
-import tailwind from '../../assets/icons/icons8-tailwind-css-48.png'
-import npm from '../../assets/icons/icons8-npm-48.png'
-import sass from '../../assets/icons/icons8-sass-48.png'
-import git from '../../assets/icons/icons8-git-48.png'
-import firebase from '../../assets/icons/icons8-google-firebase-console-48.png'
-import gitHub from '../../assets/icons/icons8-github-48.png'
-import VScode from '../../assets/icons/icons8-visual-studio-code-2019-48.png'
-import webpack from '../../assets/icons/icons8-webpack-48.png'
-import nuxt from '../../assets/icons/colored-logo.svg'
-import vitest from '../../assets/icons/vitest-seeklogo.com.svg'
-
-import YarnIcon from '../icons/YarnIcon'
-import PiniaIcon from '../icons/PiniaIcon'
-
-import drink from '../../assets/icons/undraw_refreshing_beverage_td3r.svg'
+import skills from '../../data/skills'
 
 type Props = {}
 
 const IconsCircle = (props: Props) => {
-	const cardContainer = useRef<HTMLDivElement>(null)
 	useEffect(() => {
 		Aos.init({ duration: 400 })
 	}, [])
 
-	const handleMouseMove = (e: React.MouseEvent | React.PointerEvent) => {
-		const cards = Array.from(cardContainer.current!.children) as HTMLElement[]
-
-		for (let card of cards) {
-			const rect = card.getBoundingClientRect(),
-				x = e.clientX - rect.left,
-				y = e.clientY - rect.top
-
-			card.style.setProperty('--mouse-x', `${x}px`)
-
-			card.style.setProperty('--mouse-y', `${y}px`)
-		}
-	}
-
 	return (
-		<div
-			ref={cardContainer}
-			className=" cards relative"
-			onMouseMove={(e: React.MouseEvent) => {
-				handleMouseMove(e)
-			}}
-		>
+		<div className=" select-none relative flex flex-col gap-2 medium:col-span-2 md:gap-4 xl:col-span-3 xl:row-span-2">
 			{' '}
-			<img
-				src={drink}
-				className="hidden absolute w-20 bottom-full small:block"
-				alt=""
-			/>
-			<div className="card">
-				<div className="card-content">
-					<p className="">HTML</p>
-					<img className="icon" src={html} alt="html logo" />
-					<p className=" tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
+			{skills.map((skill) => (
+				<div key={skill.name}>
+					<h3 className=" font-bold mb-2 text-center text-lg relative after:absolute after:w-1 after:left-0 after:h-[110%] after:bg-my-accent after:top-1/2 after:-translate-y-1/2 after:hidden md:after:block md:text-left md:mb-4 md:pl-2 md:text-xl lg:pl-4">
+						{skill.name}
+					</h3>
+					<div
+						className="grid grid-cols-3 gap-2 medium:grid-cols-4 md:grid-cols-5 lg:grid-cols-6"
+					>
+						{skill.skills.map((icon) => (
+							<div key={icon.id} className="card">
+								<div className="card-content">
+									<p className="text-xs">{icon.name}</p>
+									<img
+										className="icon scale-75 small:scale-100"
+										src={icon.image}
+										alt={icon.name}
+									/>
+									<p className=" tracking-widest font-bold  ">
+										<span className="text-my-accent opacity-100">
+											{icon.skill}
+										</span>
+										<span className="opacity-50">{icon.noSkill}</span>
+									</p>
+								</div>
+							</div>
+						))}
+					</div>
 				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>CSS</p>
-					<img className="icon" src={cssIcon} alt="cssIcon logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>JavaScript</p>
-					<img className="icon" src={javaScript} alt="javaScript logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>VUE</p>
-					<img className="icon" src={vueJs} alt="vueJs logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Nuxt 3</p>
-					<img className=" icon w-12 h-auto" src={nuxt} alt="nuxt logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>React</p>
-					<img className=" icon w-12 h-auto" src={react} alt="react logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>jQuery</p>
-					<img className="icon" src={jquery} alt="jquery logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Tailwind</p>
-					<img className="icon" src={tailwind} alt="tailwind logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Sass(Scss)</p>
-					<img className="icon" src={sass} alt="sass logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>TypeScript</p>
-					<img className="icon" src={typeScript} alt="typeScript logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>Webpack</p>
-					<img className="icon" src={webpack} alt="webpack logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card">
-				<div className="card-content">
-					<p>Npm</p>
-					<img className="icon" src={npm} alt="npm logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Yarn</p>
-					<YarnIcon />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Git</p>
-					<img className="icon" src={git} alt="git logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>GitHub</p>
-					<img className="icon" src={gitHub} alt="gitHub logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card  ">
-				<div className="card-content">
-					<p>VS code</p>
-					<img className="icon" src={VScode} alt="visual studio code logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||||</span>
-						<span className="opacity-50">|</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Firebase</p>
-					<img className="icon" src={firebase} alt="firebase logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Pinia</p>
-					<PiniaIcon />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">|||</span>
-						<span className="opacity-50">||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Vite</p>
-					<img className="icon" src={vite} alt="vite logo" />
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
-			<div className="card ">
-				<div className="card-content">
-					<p>Vitest</p>
-
-					<img className="icon" src={vitest} alt="vitest logo" />
-
-					<p className="tracking-widest font-bold  ">
-						<span className="text-my-accent opacity-100">||</span>
-						<span className="opacity-50">|||</span>
-					</p>
-				</div>
-			</div>
+			))}
 		</div>
 	)
 }

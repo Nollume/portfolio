@@ -3,12 +3,13 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import fishing from '../assets/icons/undraw_fishing_hoxa.svg'
+import pipe from '../assets/pipes/icons8-pipe-24.png'
 
 type Props = {}
 
 const Omne = (props: Props) => {
 	return (
-		<section id="Omne" className=" pt-14 px-4  medium:px-8">
+		<section id="Omne" className=" pt-14 px-4  medium:px-8 relative">
 			<h3 className=" headline3 mb-4  z-40 medium:mb-8">O mne</h3>
 
 			<div className="flex flex-col gap-2 items-center justify-start md:flex-row">
@@ -36,7 +37,7 @@ const Omne = (props: Props) => {
 							{' '}
 							<strong className="text-my-accent">2012/2022: </strong>
 							Hned po škole som začal pracovať vystriedal som viac pracovných
-							oblastí najdlhšie som pracoval v drevospracujúcom priemysele.
+							oblastí ktoré sa netýkali IT odvetia.
 							Venoval som sa hudobnej produkcii čomu sa stále venujem ako hobby.
 						</p>
 					</li>
@@ -63,7 +64,7 @@ const Omne = (props: Props) => {
 						<p className="cardAbout">
 							{' '}
 							<strong className="text-my-accent">2023: </strong> Momentálne sa
-							učím Node.js - Express.js + databázy
+							učím Node.js - Express.js + MongoDB
 						</p>
 					</li>
 					<li>
@@ -77,7 +78,7 @@ const Omne = (props: Props) => {
 				<div
 					data-aos="zoom-in-up"
 					data-aos-duration="400"
-					className="   mx-auto w-full h-auto small:w-4/5 sm:w-2/3 md:order-2 md:flex-1"
+					className=" mx-auto w-full h-auto small:w-4/5 sm:w-2/3 md:order-2 md:flex-1"
 				>
 					<img src={fishing} alt="fishing image" />
 				</div>

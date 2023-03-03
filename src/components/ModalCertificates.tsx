@@ -28,13 +28,13 @@ import vueUdemyPdf from '../assets/certifikaty/UC-1d28d63e-8f8e-4640-b8b1-54b666
 
 type Props = { handleCloseModal: () => void; certificatesModal: boolean }
 
+interface certificatesInterface {
+	id: number
+	name: string
+	url: string
+	pdf: string
+}
 const ModalCertificates = (props: Props) => {
-	interface certificatesInterface {
-		id: number
-		name: string
-		url: string
-		pdf: string
-	}
 	const certificates: certificatesInterface[] = [
 		{ id: 6, name: 'htmlCss', url: htmlCss, pdf: htmlCssPdf },
 		{
@@ -86,13 +86,15 @@ const ModalCertificates = (props: Props) => {
 						key={certificate.id}
 						className="p-2 border bg-[#d7dfea] dark:bg-[#131e37]  border-my-dark/20 dark:border-my-light/20 rounded-md"
 					>
-						<div className='flex justify-start'>
+						<div className="flex justify-start">
 							<a
 								href={certificate.pdf}
 								download
 								className="flex flex-row-reverse items-center justify-end cursor-pointer"
 							>
-								<span className="text-my-accent underline hover:text-my-accentHover duration-300">Stiahnúť .PDF</span>{' '}
+								<span className="text-my-accent underline hover:text-my-accentHover duration-300">
+									Stiahnúť .PDF
+								</span>{' '}
 								<Download />
 							</a>
 						</div>

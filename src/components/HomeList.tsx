@@ -16,7 +16,7 @@ const HomeList = (props: Props) => {
 			</li>
 			<li className="flex gap-2 items-center py-1">
 				<img className="w-5 aspect-square" src={check} alt="check" />
-				Najradšej pracujem s VUE.js / Nuxt3.
+				Moje obľúbené technológie sú VUE.js a React.js.
 			</li>
 			<li className="flex gap-2 items-center py-1">
 				<img className="w-5 aspect-square" src={check} alt="check" />
