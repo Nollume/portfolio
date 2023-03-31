@@ -23,6 +23,7 @@ import express from '../assets/icons/expressjs-icon.svg'
 import mongoDB from '../assets/icons/mongodb-icon.svg'
 import jest from '../assets/icons/jest-svgrepo-com.svg'
 import postman from '../assets/icons/getpostman-icon.svg'
+import sql from '../assets/icons/icons8-sql-60.png'
 
 interface skillsTypes {
 	id: number
@@ -88,6 +89,13 @@ const skills: skillContainer[] = [
 				image: firebase,
 				skill: '||',
 				noSkill: '|||',
+			},
+			{
+				id: 5,
+				name: 'SQL',
+				image: sql,
+				skill: '|||',
+				noSkill: '||',
 			},
 		],
 	},

@@ -13,6 +13,7 @@ import zakladyProgramovania from '../assets/certifikaty/zaklady-programovania-a-
 import nuxt from '../assets/certifikaty/UC-427971e9-f2ca-472d-b2c4-3020d4b395961.jpg'
 import vitest from '../assets/certifikaty/UC-575ae6df-18af-4836-88ca-ea19ed442d131.jpg'
 import vueUdemy from '../assets/certifikaty/UC-1d28d63e-8f8e-4640-b8b1-54b666830ec61.jpg'
+import nodeJs from '../assets/certifikaty/UC-e2dad69b-89e9-4bd5-bbe3-923ca8315cc02.jpg'
 
 import sassPdf from '../assets/certifikaty/css-preprocesory-sass.pdf'
 import gitPdf from '../assets/certifikaty/git-a-github-zaklady.pdf'
@@ -25,6 +26,7 @@ import zakladyProgramovaniaPdf from '../assets/certifikaty/zaklady-programovania
 import nuxtPdf from '../assets/certifikaty/UC-427971e9-f2ca-472d-b2c4-3020d4b39596.pdf'
 import vitestPdf from '../assets/certifikaty/UC-575ae6df-18af-4836-88ca-ea19ed442d13.pdf'
 import vueUdemyPdf from '../assets/certifikaty/UC-1d28d63e-8f8e-4640-b8b1-54b666830ec6.pdf'
+import nodeJsPdf from '../assets/certifikaty/UC-e2dad69b-89e9-4bd5-bbe3-923ca8315cc0.pdf'
 
 type Props = { handleCloseModal: () => void; certificatesModal: boolean }
 
@@ -57,6 +59,7 @@ const ModalCertificates = (props: Props) => {
 		{ id: 8, name: 'nuxt', url: nuxt, pdf: nuxtPdf },
 		{ id: 10, name: 'vitest', url: vitest, pdf: vitestPdf },
 		{ id: 11, name: 'vueUdemy', url: vueUdemy, pdf: vueUdemyPdf },
+		{ id: 12, name: 'node', url: nodeJs, pdf: nodeJsPdf },
 	]
 	document.addEventListener('keyup', (e: KeyboardEvent) => {
 		if (props.certificatesModal) {
